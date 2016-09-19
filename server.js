@@ -17,7 +17,7 @@ var articles = {
                         This is the Second Article of the Web application.
                     </p>`
         },
-        "article-Three":  {
+        "article-three":  {
             "title": "Article Three | Nikhil Prakash",
             "heading": "Aricle Three",
             "content":  `<p>
