@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            Article Two | Nikhil Prakash
+        </title>
+        <meta name="viewport" content="width-device-width, initial-scale=1" />
+    </head>
+    <body>
+        <div>
+            <a href='/'>Home</a>
+        </div>
+        <hr>
+        <div>
+            <h1>Welcome to Article Two</h1>
+        </div>
+        <div>
+            <p>
+                This is the second Article of the Web application.
+            </p>
+        </div>
+    </body>
+</html>
