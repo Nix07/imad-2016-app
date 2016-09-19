@@ -2,6 +2,46 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 
+var articleone = {
+    "title": "Article One | Nikhil Prakash",
+    "heading": "Aricle One",
+    "content":  `<p>
+                    This is the first Article of the Web application.
+                </p>`
+};
+
+function createtemplate(data){
+var title = data.title;
+var heading= data.heading;
+var content= data.content;
+
+    var htmltemplate = ` 
+        <html>
+        <head>
+            <title>
+                $(title)
+            </title>
+            <link href="/ui/style.css" rel="stylesheet" />
+            <meta name="viewport" content="width-device-width, initial-scale=1" />
+        </head>
+        <body>
+            <div class="container">
+                <div>
+                    <a href='/'>Home</a>
+                </div>
+                <hr>
+                <div>
+                    <h1>Welcome to $(heading)</h1>
+                </div>
+                <div>
+                    $(content)
+                </div>
+            </div>
+        </body>
+    </html> `;
+}
+    
+
 var app = express();
 app.use(morgan('combined'));
 
