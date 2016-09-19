@@ -10,6 +10,22 @@ var articleone = {
                 </p>`
 };
 
+var articletwo = {
+    "title": "Article Two | Nikhil Prakash",
+    "heading": "Aricle Two",
+    "content":  `<p>
+                    This is the Second Article of the Web application.
+                </p>`
+};
+
+var articleone = {
+    "title": "Article Three | Nikhil Prakash",
+    "heading": "Aricle Three",
+    "content":  `<p>
+                    This is the third Article of the Web application.
+                </p>`
+};
+
 function createtemplate(data){
 var title = data.title;
 var heading= data.heading;
@@ -55,11 +71,11 @@ app.get('/article-one',function (req,res){
 });
 
 app.get('/article-two',function (req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+     res.send(createtemplate(articletwo));
 });
 
 app.get('/article-three',function (req,res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+     res.send(createtemplate(articlethree));
 });
 
 app.get('/ui/style.css', function (req, res) {
