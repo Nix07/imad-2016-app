@@ -71,14 +71,6 @@ app.get('/:articleName',function (req,res){
    res.send(createtemplate(articles[articleName]));
 });
 
-app.get('/article-two',function (req,res){
-     res.send(createtemplate(articletwo));
-});
-
-app.get('/article-three',function (req,res){
-     res.send(createtemplate(articlethree));
-});
-
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
