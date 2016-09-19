@@ -18,7 +18,7 @@ var articletwo = {
                 </p>`
 };
 
-var articleone = {
+var articlethree = {
     "title": "Article Three | Nikhil Prakash",
     "heading": "Aricle Three",
     "content":  `<p>
