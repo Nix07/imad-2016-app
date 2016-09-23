@@ -72,7 +72,7 @@ app.get('/:articleName',function (req,res){
 });
 
 app.get('/ui/style.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+  res.sendFile(path.join(__dirname, 'ui', 'style2.css'));
 });
 
 app.get('/ui/main.js', function (req, res) {
@@ -84,7 +84,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/ui/resumeBuilder.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'resumeBuilde.js'));
+  res.sendFile(path.join(__dirname, 'ui', 'resumeBuilder.js'));
 });
 
 app.get('/ui/helper.js', function (req, res) {
@@ -93,6 +93,13 @@ app.get('/ui/helper.js', function (req, res) {
 
 app.get('/ui/jQuery.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'jQuery.js'));
+});
+
+app.get('/ui/style2.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style2.css'));
+});
+app.get('/ui/fry.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'fry.jpg'));
 });
 
 
