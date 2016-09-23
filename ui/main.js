@@ -6,6 +6,11 @@ elem.innerHTML = "New Value";
 
 //Moving the madi
 var elem2 = document.getElementById('madi');
+function moveRight() {
+    marginleft = marginleft + 10;
+    elem2.style.marginLeft = marginleft + 'px';
+}
+
 elem2.onclick = function () {
-   elem2.style.marginLeft = '100px';  
+   setIntervals(moveRight,50);  
 };
