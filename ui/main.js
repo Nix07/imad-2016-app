@@ -13,5 +13,5 @@ function moveRight() {
 }
 
 elem2.onclick = function () {
-   setIntervals(moveRight,50);  
+   setInterval(moveRight,50);  
 };
