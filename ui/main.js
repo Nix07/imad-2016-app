@@ -6,6 +6,7 @@ elem.innerHTML = "New Value";
 
 //Moving the madi
 var elem2 = document.getElementById('madi');
+var marginleft = 0;
 function moveRight() {
     marginleft = marginleft + 10;
     elem2.style.marginLeft = marginleft + 'px';
