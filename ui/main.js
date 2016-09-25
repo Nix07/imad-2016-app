@@ -18,3 +18,20 @@ button.onclick = function () {
     request.open('GET','http://nix07.imad.hasura-app.io/counter', true);
     request.send(null);
 };
+
+
+//Response from the server
+var nameInput = document.getElementById('name');
+var name = nameInput.value;
+var submit = document.getElementById('submit_btn');
+submit.onclick = function() {
+    //Make the request to the server and send the name
+    //Capture the names name render it
+    var names = ['name1','name2','name3'];
+    var list = '';
+    for (var i=0;i < names.length;i++){
+    	list += '<li>' + names[i] + '</li>';
+    }
+    var ul = document.getElementById('namelist');
+    ul.innerHTML = list;
+};
