@@ -1,17 +1,7 @@
-console.log('Loaded!');
-
-//Executing new javascript
-var elem = document.getElementById('main');
-elem.innerHTML = "New Value";
-
-//Moving the madi
-var elem2 = document.getElementById('madi');
-var marginleft = 0;
-function moveRight() {
-    marginleft = marginleft + 10;
-    elem2.style.marginLeft = marginleft + 'px';
+//Counter code
+var button = document.get ElementById("button");
+button.onclick() = function(){
+    counter = counter +1;
+    var span = document.getElementbyId("count");
+    span.innerHTML = counter.toString();
 }
-
-elem2.onclick = function () {
-   setInterval(moveRight,50);  
-};
