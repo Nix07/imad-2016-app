@@ -96,7 +96,7 @@ app.get('/ui/jQuery.js', function (req, res) {
 });
 
 app.get('/ui/style2.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'style2.css'));
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 app.get('/ui/fry.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'fry.jpg'));
