@@ -1,6 +1,5 @@
 //Counter code
 var button = document.getElementById("button");
-var counter = 0;
 
 button.onclick = function(){
     
@@ -16,6 +15,6 @@ button.onclick = function(){
        }
     };
     
-    request.open('GET','http://nix07.imad.hasura-app.io/counter',true);
+    request.open('GET','http://nix07.imad.hasura-app.io/counter', true);
     request.send(null);
 };
