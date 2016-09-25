@@ -16,6 +16,6 @@ button.onclick = function(){
        }
     };
     
-    request.open('GET',"http://http://nix07.imad.hasura-app.io/counter",true);
+    request.open('GET','http://nix07.imad.hasura-app.io/counter"',true);
     request.send(null);
 };
