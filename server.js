@@ -66,7 +66,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index2.html'));
 });
 
-var counter = 0;
+/*var counter = 0;
 app.get('/counter', function (req, res) {
   counter = counter + 1;
   res.send(counter.toString());
@@ -79,7 +79,7 @@ app.get('/submit-name', function(req, res) {
     names.push(name);
 	//JSON Javascript Object Notation
 	res.send(JSON.stringify(names));
-});
+});*/
 
 
 app.get('/:articleName',function (req,res){
