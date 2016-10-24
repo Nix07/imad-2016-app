@@ -14,6 +14,7 @@ var config = {
 var articles = {
         "article-one": {
         "title": "Article One | Nikhil Prakash",
+        "date": "3",
         "heading": "Aricle One",
         "content":  `<p>
                         This is the first Article of the Web application.
