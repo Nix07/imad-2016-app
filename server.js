@@ -39,6 +39,7 @@ var articles = {
 function createtemplate(data){
 var title = data.title;
 var heading= data.heading;
+var date = data.date;
 var content= data.content;
 
     var htmltemplate = ` 
@@ -58,6 +59,9 @@ var content= data.content;
                 <hr>
                 <div>
                     <h1>Welcome to ${heading}</h1>
+                </div>
+                <div>
+                    ${date};
                 </div>
                 <div>
                     ${content}
