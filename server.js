@@ -63,7 +63,7 @@ var app = express();
 app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'index2.html'));
 });
 
 var counter = 0;
@@ -87,6 +87,49 @@ app.get('/:articleName',function (req,res){
    res.send(createtemplate(articles[articleName]));
 });
 
+app.get('/ui/bootstrap.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'bootstrap.css'));
+});
+
+app.get('/ui/jquery.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'jquery.js'));
+});
+
+app.get('/ui/bootstrap.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'bootstrap.js'));
+});
+
+app.get('/ui/imge3.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'imge3.jpg'));
+});
+
+app.get('/ui/img.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'img.jpg'));
+});
+
+app.get('/ui/img3.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'img3.jpg'));
+});
+
+app.get('/ui/imge.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'imge.jpg'));
+});
+
+app.get('/ui/img2.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'img2.jpg'));
+});
+
+app.get('/ui/img.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'img.jpg'));
+});
+
+app.get('/ui/web2.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'web2.jpg'));
+});
+
+app.get('/ui/solve.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'solve.jpg'));
+});
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
