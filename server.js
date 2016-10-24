@@ -61,7 +61,7 @@ var content= data.content;
                     <h1>Welcome to ${heading}</h1>
                 </div>
                 <div>
-                    ${date};
+                    ${date}
                 </div>
                 <div>
                     ${content}
