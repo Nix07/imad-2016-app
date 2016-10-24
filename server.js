@@ -11,31 +11,6 @@ var config = {
     password: process.env.DB_PASSWORD
 };
 
-var articles = {
-        "article-one": {
-        "title": "Article One | Nikhil Prakash",
-        "date": "3",
-        "heading": "Aricle One",
-        "content":  `<p>
-                        This is the first Article of the Web application.
-                    </p>`
-     },
-        "article-two":  {
-            "title": "Article Two | Nikhil Prakash",
-            "heading": "Aricle Two",
-            "content":  `<p>
-                        This is the Second Article of the Web application.
-                    </p>`
-        },
-        "article-three":  {
-            "title": "Article Three | Nikhil Prakash",
-            "heading": "Aricle Three",
-            "content":  `<p>
-                        This is the Third Article of the Web application.
-                    </p>`
-        },
-};
-
 function createtemplate(data){
 var title = data.title;
 var heading= data.heading;
