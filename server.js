@@ -182,6 +182,30 @@ app.get('/ui/pp4.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'pp4.jpg'));
 });
 
+app.get('/ui/s1.jpeg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 's1.jpeg'));
+});
+
+app.get('/ui/s2.jpeg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 's2.jpeg'));
+});
+
+app.get('/ui/s3.jpeg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 's3.jpeg'));
+});
+
+app.get('/ui/s4.jpeg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 's4.jpeg'));
+});
+
+app.get('/ui/s5.jpeg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 's5.jpeg'));
+});
+
+app.get('/ui/s6.jpeg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 's6.jpeg'));
+});
+
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
