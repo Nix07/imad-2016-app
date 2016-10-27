@@ -190,8 +190,8 @@ app.get('/ui/s2.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 's2.jpg'));
 });
 
-app.get('/ui/s3.jpeg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 's3.jpeg'));
+app.get('/ui/s3.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 's3.jpg'));
 });
 
 app.get('/ui/s4.jpg', function (req, res) {
