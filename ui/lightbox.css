@@ -1,6 +1,6 @@
 /* Preload images */
 body:after {
-  content: url(../images/close.png) url(../images/loading.gif) url(../images/prev.png) url(../images/next.png);
+  content: url(../ui/close.png) url(../ui/loading.gif) url(../ui/prev.png) url(../ui/next.png);
   display: none;
 }
 
