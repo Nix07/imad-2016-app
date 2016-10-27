@@ -161,6 +161,23 @@ app.get('/ui/web2.jpg', function (req, res) {
 app.get('/ui/solve.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'solve.jpg'));
 });
+
+app.get('/ui/pp1.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'pp1.jpg'));
+});
+
+app.get('/ui/pp2.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'pp2.jpg'));
+});
+
+app.get('/ui/pp3.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'pp3.jpg'));
+});
+
+app.get('/ui/pp4.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'pp4.jpg'));
+});
+
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
