@@ -214,6 +214,14 @@ app.get('/ui/prev.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'prev.png'));
 });
 
+app.get('/ui/close.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'close.png'));
+});
+
+app.get('/ui/loading.gif', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'loading.gif'));
+});
+
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
