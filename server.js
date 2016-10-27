@@ -126,6 +126,10 @@ app.get('/ui/index3.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index3.html'));
 });
 
+app.get('/ui/butterfly.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'butterfly.html'));
+});
+
 app.get('/ui/imge2.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'imge2.jpg'));
 });
