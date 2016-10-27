@@ -12,39 +12,38 @@ var config = {
 };
 
 function createtemplate(data){
-var title = data.title;
-var heading= data.heading;
-var date = data.date;
-var content= data.content;
-
-    var htmltemplate = ` 
-        <html>
-        <head>
-            <title>
-                ${title}
-            </title>
-            <link href="/ui/style.css" rel="stylesheet" />
-            <meta name="viewport" content="width-device-width, initial-scale=1" />
-        </head>
-        <body>
-            <div class="container">
-                <div>
-                    <a href='/'>Home</a>
+    var title = data.title;
+    var heading= data.heading;
+    var date = data.date;
+    var content= data.content;
+        var htmltemplate = ` 
+            <html>
+            <head>
+                <title>
+                    ${title}
+                </title>
+                <link href="/ui/style.css" rel="stylesheet" />
+                <meta name="viewport" content="width-device-width, initial-scale=1" />
+            </head>
+            <body>
+                <div class="container">
+                    <div>
+                        <a href='/'>Home</a>
+                    </div>
+                    <hr>
+                    <div>
+                        <h1>Welcome to ${heading}</h1>
+                    </div>
+                    <div>
+                        ${date.toDateString()}
+                    </div>
+                    <div>
+                        ${content}
+                    </div>
                 </div>
-                <hr>
-                <div>
-                    <h1>Welcome to ${heading}</h1>
-                </div>
-                <div>
-                    ${date.toDateString()}
-                </div>
-                <div>
-                    ${content}
-                </div>
-            </div>
-        </body>
-    </html> `;
-    return htmltemplate;
+            </body>
+        </html> `;
+        return htmltemplate;
 }
     
 
@@ -111,8 +110,20 @@ app.get('/ui/jquery.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'jquery.js'));
 });
 
+app.get('/ui/lightbox.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'lightbox.css'));
+});
+
 app.get('/ui/bootstrap.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'bootstrap.js'));
+});
+
+app.get('/ui/lightbox.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'lightbox.js'));
+});
+
+app.get('/ui/index3.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index3.html'));
 });
 
 app.get('/ui/imge2.jpg', function (req, res) {
