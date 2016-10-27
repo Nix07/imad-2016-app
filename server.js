@@ -206,7 +206,7 @@ app.get('/ui/s6.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 's6.jpg'));
 });
 
-app.get('/ui/next.png', function (req, res) {
+app.get('next.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'next.png'));
 });
 
