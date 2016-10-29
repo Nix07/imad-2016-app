@@ -122,7 +122,7 @@ app.get('/ui/lightbox.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'lightbox.js'));
 });
 
-app.get('/ui/index3.html', function (req, res) {
+app.get('/index3.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index3.html'));
 });
 
