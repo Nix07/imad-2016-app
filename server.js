@@ -206,6 +206,14 @@ app.get('/images/pp4.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','images' ,'pp4.jpg'));
 });
 
+app.get('/images/pp5.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','images' ,'pp5.jpg'));
+});
+
+app.get('/images/pp6.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','images' ,'pp6.jpg'));
+});
+
 app.get('/images/s1.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','images' ,'s1.jpg'));
 });
