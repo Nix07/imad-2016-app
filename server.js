@@ -122,8 +122,8 @@ app.get('/js/lightbox.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','js', 'lightbox.js'));
 });
 
-app.get('/index3.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index3.html'));
+app.get('/index4.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index4.html'));
 });
 
 app.get('/butterfly.html', function (req, res) {
