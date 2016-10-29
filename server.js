@@ -130,6 +130,30 @@ app.get('/butterfly.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'butterfly.html'));
 });
 
+app.get('/css/demo.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','css' ,'demo.css'));
+});
+
+app.get('/css/reset.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','css' ,'reset.css'));
+});
+
+app.get('/css/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','css', 'style.css'));
+});
+
+app.get('/js/jquery.easing.1.3.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','js', 'jquery.easing.1.3.js'));
+});
+
+app.get('/js/jquery.eislideshow.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','js', 'jquery.eislideshow.js'));
+});
+
+app.get('/js/jquery.eislideshow.js.bak', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','js', 'jquery.eislideshow.js.bak'));
+});
+
 app.get('/images/imge2.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','images', 'imge2.jpg'));
 });
