@@ -194,43 +194,43 @@ app.get('/images/s3.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','images', 's3.jpg'));
 });
 
-app.get('/ui/s4.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 's4.jpg'));
+app.get('/images/s4.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','images', 's4.jpg'));
 });
 
-app.get('/ui/s5.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 's5.jpg'));
+app.get('/images/s5.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','images' ,'s5.jpg'));
 });
 
-app.get('/ui/s6.jpg', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 's6.jpg'));
+app.get('/images/s6.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','images', 's6.jpg'));
 });
 
-app.get('/ui/next.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'next.png'));
+app.get('/images/next.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','images', 'next.png'));
 });
 
-app.get('/ui/prev.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'prev.png'));
+app.get('/images/prev.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','images' ,'prev.png'));
 });
 
-app.get('/ui/close.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'close.png'));
+app.get('/images/close.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','images', 'close.png'));
 });
 
-app.get('/ui/loading.gif', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'loading.gif'));
+app.get('/images/loading.gif', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','images', 'loading.gif'));
 });
 
-app.get('/ui/main.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'main.js'));
+app.get('/main.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','main.js'));
 });
 
-app.get('/ui/madi.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
+app.get('/images/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','images' ,'madi.png'));
 });
 
-app.get('/ui/style.css', function (req, res) {
+app.get('/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
