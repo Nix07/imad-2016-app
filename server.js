@@ -126,7 +126,7 @@ app.get('/index3.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index3.html'));
 });
 
-app.get('/ui/butterfly.html', function (req, res) {
+app.get('/butterfly.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'butterfly.html'));
 });
 
