@@ -114,7 +114,7 @@ function createtemplate2(data){
             				</ul>
             		</div>
             	</body>
-            </html>`
+            </html>`;
     return htmltemplate;
 }
 
