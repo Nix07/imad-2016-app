@@ -134,6 +134,14 @@ app.get('/index4.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index4.html'));
 });
 
+app.get('/about.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'about.html'));
+});
+
+app.get('/post.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'post.html'));
+});
+
 app.get('/butterfly.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'butterfly.html'));
 });
