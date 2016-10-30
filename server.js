@@ -107,7 +107,7 @@ app.get('/css/bootstrap.css', function (req, res) {
 });
 
 app.get('/css/style2.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui','css', 'style.css'));
+  res.sendFile(path.join(__dirname, 'ui','css', 'style2.css'));
 });
 
 app.get('/js/jquery.js', function (req, res) {
