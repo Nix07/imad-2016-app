@@ -22,7 +22,7 @@ function createtemplate(data){
                 <title>
                     ${title}
                 </title>
-                <link href="/ui/style.css" rel="stylesheet" />
+                <link href='/ui/style.css' rel="stylesheet" />
                 <meta name="viewport" content="width-device-width, initial-scale=1" />
             </head>
             <body>
@@ -56,10 +56,10 @@ function createtemplate2(data){
             <html>
             	<head>
             		<title>My Blog</title>
-            		<link rel="stylesheet" href="css/bootstrap.css">
-            		<link rel="stylesheet" href="css/style2.css">
-            		<script src="js/jquery.js"></script>
-            		<script src="js/bootstrap.js"></script>
+            		<link rel="stylesheet" href='css/bootstrap.css'>
+            		<link rel="stylesheet" href='css/style2.css>
+            		<script src='js/jquery.js'></script>
+            		<script src='js/bootstrap.js'></script>
             	</head>
             
             	<body>
