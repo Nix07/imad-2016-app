@@ -278,6 +278,26 @@ app.get('/images/loading.gif', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','images', 'loading.gif'));
 });
 
+app.get('/fonts/glyphicons-halflings-regular.eot', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','fonts', 'glyphicons-halflings-regular.eot'));
+});
+
+app.get('/fonts/glyphicons-halflings-regular.svgt', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','fonts', 'glyphicons-halflings-regular.svg'));
+});
+
+app.get('/fonts/glyphicons-halflings-regular.ttf', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','fonts', 'glyphicons-halflings-regular.ttf'));
+});
+
+app.get('/fonts/glyphicons-halflings-regular.woff', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','fonts', 'glyphicons-halflings-regular.woff'));
+});
+
+app.get('/fonts/glyphicons-halflings-regular.woff2', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','fonts', 'glyphicons-halflings-regular.woff2'));
+});
+
 app.get('/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','main.js'));
 });
