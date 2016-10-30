@@ -122,6 +122,10 @@ app.get('/js/lightbox.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','js', 'lightbox.js'));
 });
 
+app.get('/index3.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index3.html'));
+});
+
 app.get('/index4.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index4.html'));
 });
@@ -240,6 +244,10 @@ app.get('/images/s5.jpg', function (req, res) {
 
 app.get('/images/s6.jpg', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','images', 's6.jpg'));
+});
+
+app.get('/images/header.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','images', 'header.jpg'));
 });
 
 app.get('/images/next.png', function (req, res) {
