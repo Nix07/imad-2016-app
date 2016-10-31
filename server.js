@@ -83,7 +83,7 @@ function createtemplate2(data){
             				</ul>
             			</div>
             		</nav>
-            		<header style="background: url(images/header.jpg)">
+            		<header style="background: url(/images/header.jpg)">
             			<div class="text-center">
             				<h1>The Blog</h1>
             			<div class="lead">
