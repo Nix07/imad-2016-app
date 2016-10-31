@@ -57,8 +57,8 @@ function createtemplate2(data){
             		<title>My Blog</title>
             		<link rel="stylesheet" href="/css/bootstrap.css">
             		<link rel="stylesheet" href="/style2.css">
-            		<script src="js/jquery.js"></script>
-            		<script src="js/bootstrap.js"></script>
+            		<script src="/js/jquery.js"></script>
+            		<script src="/js/bootstrap.js"></script>
             	</head>
             
             	<body>
