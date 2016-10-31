@@ -95,7 +95,7 @@ function createtemplate2(data){
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<div id="posts">
-					<h1><a href="#">Water on Mars</a></h1>
+					<h1><a href="#">${heading}</a></h1>
 					<p>${date.toDateString()} | Nikhil Prakash</p>
 					<p class="lead">
 					    ${content}
