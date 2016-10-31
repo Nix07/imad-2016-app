@@ -88,7 +88,7 @@ function createtemplate2(data){
 			<div class="text-center">
 				<h1>The Blog</h1>
 			<div class="lead">
-				The Best Blog you have seen
+				'The Blog' for dummies...
 			</div>
 			</div>
 		</header>
