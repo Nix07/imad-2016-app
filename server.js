@@ -53,7 +53,6 @@ function createtemplate2(data){
     var content = data.content;
         var htmltemplate = `
         <!DOCTYPE html>
-            <html>
             	<head>
             		<title>My Blog</title>
             		<link rel="stylesheet" href='css/bootstrap.css'>
