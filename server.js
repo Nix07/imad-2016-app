@@ -19,7 +19,7 @@ app.use(morgan('combined'));
 app.use(bodyParser.json());
 
 function hash(input, salt) {
-	var hashed = crypto.pbkdf25ync(input, salt, 10000);
+	var hashed = crypto.pbkdf2Sync(input, salt, 10000, 512, 'sha512');
 	return ['pbkdf2','10000',salt,hashed.toString('hex')].join('$');
 }
 
