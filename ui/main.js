@@ -1,5 +1,5 @@
 //Counter code
-var button = document.getElementById("counter");
+/*var button = document.getElementById("counter");
 
 button.onclick = function () {
     
@@ -17,10 +17,10 @@ button.onclick = function () {
     
     request.open('GET','http://nix07.imad.hasura-app.io/counter', true);
     request.send(null);
-};
+};*/
 
 
-//Response from the server
+//Submit username/password to login
 var submit = document.getElementById('submit_btn');
 submit.onclick = function() {
     //Make the request to the server and send the name
@@ -41,10 +41,11 @@ submit.onclick = function() {
             }
        }
     };
-    var nameInput = document.getElementById('name');
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
     var name = nameInput.value;
-    request.open('GET','http://nix07.imad.hasura-app.io/submit-name?name=' + name, true);
-        request.send(null);
+    request.open('POST','http://nix07.imad.hasura-app.io/submit-name?name=' + name, true);
+        request.send(JSON.stringify({username: username, password: password}));
     
     var names = ['name1','name2','name3'];
     var list = '';
