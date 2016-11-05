@@ -14,7 +14,7 @@ var config = {
 
 function hash(input, salt) {
 	var hashed = crypto.pbkdf25ync(input, salt, 10000);
-	return hashed;
+	return ['pbkdf2','10000',salt,hashed.toString('hex')].join('$');
 }
 
 app.get('/hash/:input', function(req, res) {
