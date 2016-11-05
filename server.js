@@ -96,9 +96,6 @@ function createtemplate2(data){
 }
 
 
-
-
-
 var app = express();
 app.use(morgan('combined'));
 
