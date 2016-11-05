@@ -1,5 +1,5 @@
 //Counter code
-var button = document.getElementById("counter");
+/*var button = document.getElementById("counter");
 
 button.onclick = function () {
     
@@ -17,8 +17,7 @@ button.onclick = function () {
     
     request.open('GET','http://nix07.imad.hasura-app.io/counter', true);
     request.send(null);
-};
-
+};*/
 
 //Response from the server
 var submit = document.getElementById('submit_btn');
