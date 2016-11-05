@@ -43,7 +43,9 @@ submit.onclick = function() {
     };
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
-    request.open('POST','http://nix07.imad.hasura-app.io/submit-name?name=' + name, true);
+    console.log(username);
+    console.log(password);
+    request.open('POST','http://nix07.imad.hasura-app.io/login' + name, true);
     request.send(JSON.stringify({username: username, password: password}));
     
    /* var names = ['name1','name2','name3'];
