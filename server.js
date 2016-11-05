@@ -25,7 +25,7 @@ function hash(input, salt) {
 
 app.get('/hash/:input', function(req, res) {
 	var hashedString = hash(req.params.input, 'This-is-some-random-string');
-	res.send(hashedString)
+	res.send(hashedString);
 });
 
 app.post('/create-user', function(req, res) {
@@ -40,7 +40,25 @@ app.post('/create-user', function(req, res) {
       }else {
           res.send(JSON.stringify(result.rows));
       }
-	})
+	});
+});
+
+app.post('/login', function (req, res){
+    var username = req.body.username;
+    var password = req.body.password;
+
+	pool.query('SELECT * from "user" username = $1', [username], function(err, result) {
+		if(err){
+          res.status(500).send(err.toString());
+      }else {
+          if(result.rows.length === 0) {
+              res.send(403).send('username/password is invalid');
+          }
+          else{
+              res.send("User successfully created: " + username);
+          }
+      }
+	});
 });
     
 function createtemplate2(data){ 
