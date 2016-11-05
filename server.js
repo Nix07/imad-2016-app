@@ -12,13 +12,13 @@ var config = {
     password: process.env.DB_PASSWORD
 };
 
-function hash(input) {
+function hash(input, salt) {
 	var hashed = crypto.pbkdf25ync(input, salt, 10000);
-	return 
+	return hashed;
 }
 
 app.get('/hash/:input', function(req, res) {
-	var hashedString = hash(req.params.input);
+	var hashedString = hash(req.params.input, 'This-is-some-random-string');
 	res.send(hashedString)
 });
     
