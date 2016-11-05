@@ -43,15 +43,14 @@ submit.onclick = function() {
     };
     var username = document.getElementById('username').value;
     var password = document.getElementById('password').value;
-    var name = nameInput.value;
     request.open('POST','http://nix07.imad.hasura-app.io/submit-name?name=' + name, true);
-        request.send(JSON.stringify({username: username, password: password}));
+    request.send(JSON.stringify({username: username, password: password}));
     
-    var names = ['name1','name2','name3'];
+   /* var names = ['name1','name2','name3'];
     var list = '';
     for (var i=0;i < names.length;i++){
     	list += '<li>' + names[i] + '</li>';
     }
     var ul = document.getElementById('namelist');
-    ul.innerHTML = list;
+    ul.innerHTML = list;*/
 };
