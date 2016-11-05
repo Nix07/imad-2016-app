@@ -13,6 +13,11 @@ var config = {
     password: process.env.DB_PASSWORD
 };
 
+
+var app = express();
+app.use(morgan('combined'));
+app.use(bodyParser.json());
+
 function hash(input, salt) {
 	var hashed = crypto.pbkdf25ync(input, salt, 10000);
 	return ['pbkdf2','10000',salt,hashed.toString('hex')].join('$');
@@ -24,6 +29,9 @@ app.get('/hash/:input', function(req, res) {
 });
 
 app.get('/create-user', function(req, res) {
+    
+    var username = req.body.username;
+    var password = req.body.password;
 	var salt = crypto.getRandomBytes(128).toString('hex');
 	var dbString = hash(password, salt);
 	pool.query('INSERT INTO "user" (username, password) VALUES ($1, $2)', [username,dbString], function(err, result) {
@@ -108,9 +116,6 @@ function createtemplate2(data){
     return htmltemplate;
 }
 
-
-var app = express();
-app.use(morgan('combined'));
 
 
 app.get('/', function (req, res) {
