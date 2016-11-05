@@ -2,6 +2,7 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
+var crypto = require('crypto')
 
 var config = {
     user: 'nix07',
@@ -11,40 +12,15 @@ var config = {
     password: process.env.DB_PASSWORD
 };
 
-function createtemplate(data){
-    var title = data.title;
-    var heading= data.heading;
-    var date = data.date;
-    var content= data.content;
-        var htmltemplate = ` 
-            <html>
-            <head>
-                <title>
-                    ${title}
-                </title>
-                <link href="/style.css"  rel="stylesheet" />
-                <meta name="viewport" content="width-device-width, initial-scale=1" />
-            </head>
-            <body>
-                <div class="container">
-                    <div>
-                        <a href='/'>Home</a>
-                    </div>
-                    <hr>
-                    <div>
-                        <h1>Welcome to ${heading}</h1>
-                    </div>
-                    <div>
-                        ${date.toDateString()}
-                    </div>
-                    <div>
-                        ${content}
-                    </div>
-                </div>
-            </body>
-        </html> `;
-    return htmltemplate;
+function hash(input) {
+	var hashed = crypto.pbkdf25ync(input, salt, 10000);
+	return 
 }
+
+app.get('/hash/:input', function(req, res) {
+	var hashedString = hash(req.params.input);
+	res.send(hashedString)
+});
     
 function createtemplate2(data){ 
     var heading = data.heading;
