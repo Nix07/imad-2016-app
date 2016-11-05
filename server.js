@@ -2,7 +2,8 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool = require('pg').Pool;
-var crypto = require('crypto')
+var crypto = require('crypto');
+var bodyParser = require('body-parser');
 
 var config = {
     user: 'nix07',
@@ -110,6 +111,7 @@ function createtemplate2(data){
 
 var app = express();
 app.use(morgan('combined'));
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index2.html'));
