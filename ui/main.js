@@ -83,7 +83,7 @@ function loadLoginForm () {
 function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
-        <h3> Hi <i>${username}</i></h3>
+        <h3> Hi <i>${username}.....</i></h3>
         <a href="/logout">Logout</a>
     `;
 }
@@ -134,7 +134,7 @@ function loadArticles () {
 
 
 // The first thing to do is to check if the user is logged in!
-
+loadLogin();
 
 // Now this is something that we could have directly done on the server-side using templating too!
 loadArticles();
