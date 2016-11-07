@@ -93,16 +93,11 @@ function loadLogin () {
     var request = new XMLHttpRequest();
     request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
-            if(req.session && req.session.auth && req.session.auth.userId) {
-                res.send('You are logged in as ' + req.session.auth.userId.toString());
-            } else {
-                res.send('Your are not logged In');
-            }
-            /*if (request.status === 200) {
+            if (request.status === 200) {
                 loadLoggedInUser(this.responseText);
             } else {
                 loadLoginForm();
-            }*/
+            }
         }
     };
     
