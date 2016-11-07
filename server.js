@@ -64,13 +64,25 @@ app.post('/login', function (req, res){
                 var salt = dbString.split('$')[2];
                 var hashedPassword = hash(password, salt);
                 if(hashedPassword === dbString) {
+                    
+                    req.session.auth = { userId: result.rows[0].id };
+                    
 	                res.send("Credentials Correct!");
+	                
                 } else {
                     res.send(403).send('username/password is invalid');
                 }
             }
         }
 	});
+});
+
+app.get('/check-login', function(req, res) {
+    if(req.session && req.session.auth && req.session.auth.userId) {
+        res.send('You are logged in as ' + req.session.auth.userid.toString());
+    } else {
+        res.send('Your are not logged In');
+    }
 });
     
 function createtemplate2(data){ 
