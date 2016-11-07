@@ -84,6 +84,11 @@ app.get('/check-login', function(req, res) {
         res.send('Your are not logged In');
     }
 });
+
+app.get('/logout', function(req, res) {
+    delete req.session.auth;
+    res.send('You are logged out');
+});
     
 function createtemplate2(data){ 
     var heading = data.heading;
