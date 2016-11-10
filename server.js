@@ -95,6 +95,7 @@ function createtemplate2(data){
 					<li><a href="/about.html">About Me</a></li>
 					<li><a href="/index3.html">Posts</a></li>
 					<li><a href="/index4.html">Gallery</a></li>
+					<li><a href="index5.html">Login/Register</a></li>
 				</ul>
 			</div>
 		</nav>
