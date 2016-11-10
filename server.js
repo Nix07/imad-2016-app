@@ -67,6 +67,79 @@ function createTemplate (data) {
     return htmlTemplate;
 }
 
+function createtemplate2(data){ 
+    var heading = data.heading;
+    var date = data.date;
+    var author = data.author;
+    var content = data.content;
+        var htmltemplate = `
+        <!DOCTYPE html> 
+<html>
+	<head>
+		<title>My Blog</title>
+		<link rel="stylesheet" href="/css/bootstrap.css">
+		<link rel="stylesheet" href="/css/style2.css">
+		<script src="/js/jquery.js"></script>
+		<script src="/js/bootstrap.js"></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-custom">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">The Blog</a>
+				</div>
+				<div class="nav nav-top navbar-nav form-inline navbar-right" style="padding: 10px">
+					<div class="input-group">
+						<input type="text" class="form-control">
+						<div class="input-group-btn">
+							<button class="btn btn-default"><i class="glyphicon  glyphicon-search"></i></button>
+						</div>
+					</div>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/">Home</a></li>
+					<li><a href="/about.html">About Me</a></li>
+					<li><a href="/index3.html">Posts</a></li>
+					<li><a href="/index4.html">Gallery</a></li>
+				</ul>
+			</div>
+		</nav>
+		<header style="background: url(/images/header.jpg)">
+			<div class="text-center">
+				<h1>The Blog</h1>
+			<div class="lead">
+				'The Blog' for dummies...
+			</div>
+			</div>
+		</header>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div id="posts">
+					<h1><a href="#">${heading}</a></h1>
+					<p>${date.toDateString()} | ${author}</p>
+					<p class="lead">
+					    ${content}
+					</p>
+				</div>
+				
+			</div>
+		</div>
+		<div class="container-fluid">
+			<hr>
+				<ul class="nav navbar-nav nav-center">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Technology</a></li>
+					<li><a href="#">Science</a></li>
+					<li><a href="#">Health</a></li>
+				</ul>
+		</div>
+	</body>
+</html>
+        `;
+    return htmltemplate;
+}
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index2.html'));
 });
