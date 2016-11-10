@@ -92,9 +92,9 @@ function createtemplate2(data){
 				
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="/">Home</a></li>
-					<li><a href="/about.html">About Me</a></li>
-					<li><a href="/index3.html">Posts</a></li>
-					<li><a href="/index4.html">Gallery</a></li>
+					<li><a href="index3.html">The Blog</a></li>
+					<li><a href="about.html">About Me</a></li>
+					<li><a href="index4.html">Gallery</a></li>
 					<li><a href="index5.html">Login/Register</a></li>
 				</ul>
 			</div>
