@@ -39,6 +39,7 @@ function loadLoginForm () {
               } else {
                   alert('Something went wrong on the server');
                   submit.value = 'Login';
+                  console.log(request.status);
               }
               loadLogin();
           }  
