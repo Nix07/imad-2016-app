@@ -2,6 +2,7 @@
 function loadLoginForm () {
     var loginHtml = `
       <h1 class="text-center">Login/Register</h1>
+        <div class="container-fluid">
 		  <form style="padding-right: 20px; padding-left=20px;padding= 50px;">
 		    <div class="form-group">
 		      <label for="email">Username:</label>
@@ -15,6 +16,7 @@ function loadLoginForm () {
 		    <button type="submit" class="btn btn-default btn-left" id="login_btn">Login</button>
 		    <button type="submit" class="btn btn-default" id="register_btn">Register</button>
 		  </form>
+		   </div>
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
     
