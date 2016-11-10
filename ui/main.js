@@ -2,7 +2,7 @@
 function loadLoginForm () {
     var loginHtml = `
       <h1 class="text-center">Login/Register</h1>
-        <div class="container-fluid col-md-6">
+        <div class="container-fluid col-md-6 text-center">
 		  <form style="padding-right: 20px; padding-left=20px;padding= 50px;">
 		    <div class="form-group">
 		      <label for="email">Username:</label>
