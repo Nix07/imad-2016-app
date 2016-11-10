@@ -340,6 +340,10 @@ app.get('/index5.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index5.html'));
 });
 
+app.get('/articles/index5.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'index5.html'));
+});
+
 app.get('/about.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'about.html'));
 });
