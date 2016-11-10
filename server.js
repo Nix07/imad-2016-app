@@ -89,14 +89,7 @@ function createtemplate2(data){
 				<div class="navbar-header">
 					<a class="navbar-brand" href="#">The Blog</a>
 				</div>
-				<div class="nav nav-top navbar-nav form-inline navbar-right" style="padding: 10px">
-					<div class="input-group">
-						<input type="text" class="form-control">
-						<div class="input-group-btn">
-							<button class="btn btn-default"><i class="glyphicon  glyphicon-search"></i></button>
-						</div>
-					</div>
-				</div>
+				
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="/">Home</a></li>
 					<li><a href="/about.html">About Me</a></li>
