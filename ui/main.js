@@ -1,7 +1,7 @@
 
 function loadLoginForm () {
     var loginHtml = `
-      <h2>Vertical (basic) form</h2>
+      <h2 class="text-center">Sign In|Up</h2>
 		  <form>
 		    <div class="form-group">
 		      <label for="email">Username:</label>
