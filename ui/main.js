@@ -39,7 +39,7 @@ function loadLoginForm () {
                   submit.value = 'Login';
                   console.log(request.status);
               } else {
-                  alert('Something went wrong on the server');
+                  alert('Something went wrong on the ver');
                   submit.value = 'Login';
                   console.log(request.status);
               }
