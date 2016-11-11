@@ -6,7 +6,7 @@ function loadCommentForm () {
         <h5>Submit a comment</h5>
         <textarea id="comment_text" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
         <br/>
-        <input type="submit" id="submit" value="Submit" class="btn btn-danger/>
+        <input type="submit" id="submit" value="Submit" class="btn btn-danger"/>
         <br/>
         `;
     var cmt = document.getElementById('comment_form');
@@ -79,7 +79,7 @@ function loadComments () {
                 for (var i=0; i< commentsData.length; i++) {
                     var time = new Date(commentsData[i].timestamp);
                     content += `<div class="comment">
-                        <p>${escapeHTML(commentsData[i].comment)}</p>
+                        <p><i>${escapeHTML(commentsData[i].comment)}</i></p>
                         <div class="commenter">
                             ${commentsData[i].username} - ${time.toLocaleTimeString()} on ${time.toLocaleDateString()} 
                         </div>
