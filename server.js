@@ -120,7 +120,7 @@ function createtemplate2(data){
 			</div>
 		</div>
 		<div class="row">
-    		<h4 class="page-header>Comments</h4>
+    		<h4 class="page-header">Comments</h4>
                   <div id="comment_form">
                   </div>
     			<div id="comments">
