@@ -6,7 +6,7 @@ function loadCommentForm () {
         <h5>Submit a comment</h5>
         <textarea id="comment_text" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
         <br/>
-        <input type="submit" id="submit" value="Submit" />
+        <input type="submit" id="submit" value="Submit" class="btn btn-danger/>
         <br/>
         `;
     var cmt = document.getElementById('comment_form');
