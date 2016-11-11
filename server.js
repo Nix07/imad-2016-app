@@ -329,6 +329,10 @@ app.get('/js/bootstrap.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','js', 'bootstrap.js'));
 });
 
+app.get('/ui/article.js', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'article.js'));
+});
+
 app.get('/js/lightbox.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','js', 'lightbox.js'));
 });
