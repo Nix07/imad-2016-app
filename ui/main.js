@@ -3,7 +3,7 @@ function loadLoginForm () {
     var loginHtml = `
       <h1 class="text-center">Login/Register</h1>
         <div class="container-fluid col-md-6 col-md-offset-3 text-center">
-		  <form style="padding-right: 20px; padding-left=20px;padding-bottom= 50px;">
+		  <form style="padding-right: 20px; padding-left=20px;">
 		    <div class="form-group">
 		      <label for="email">Username:</label>
 		      <input type="text" class="form-control" id="username" placeholder="Username">
@@ -13,7 +13,7 @@ function loadLoginForm () {
 		      <input type="password" class="form-control" id="password" placeholder="Enter password">
 		    </div>
 		    <br>
-		    <button type="submit" class="btn btn-default btn-left" id="login_btn">Login</button>
+		    <button type="submit" class="btn btn-default btn-left" id="login_btn" style="padding-bottom= 50px;">Login</button>
 		    <button type="submit" class="btn btn-default" id="register_btn">Register</button>
 		  </form>
 		   </div>
