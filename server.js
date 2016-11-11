@@ -120,14 +120,14 @@ function createtemplate2(data){
 			</div>
 		</div>
 		<div class="row">
-    		<h4 class="page-header">Comments</h4>
-                  <div id="comment_form">
-                  </div>
+		    <div class="col-md-8 col-md-offset-2">
+        		<h4 class="page-header">Comments</h4>
+                <div id="comment_form"></div>
     			<div id="comments">
                     <center>Loading comments...</center>
-                 </div>
-              </div>
-             <script type="text/javascript" src="/ui/article.js"></script>
+                </div>
+                <script type="text/javascript" src="/ui/article.js"></script>
+            </div>
 		</div>
 		<div class="container-fluid">
 			<hr>
