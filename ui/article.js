@@ -90,7 +90,7 @@ function loadComments () {
         }
     };
     
-    request.open('GET', '/get-comments/' + currentArticleTitle, true);
+    request.open('GET', '/articles/' + currentArticleTitle, true);
     request.send(null);
 }
 
