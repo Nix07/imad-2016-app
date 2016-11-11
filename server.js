@@ -120,7 +120,7 @@ function createtemplate2(data){
 			</div>
 			<div id="comments">
                 <center>Loading comments...</center>
-              </div>
+             </div>
           </div>
           <script type="text/javascript" src="/ui/article.js"></script>
 		</div>
