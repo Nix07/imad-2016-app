@@ -17,6 +17,7 @@ function loadLoginForm () {
 		    <button type="submit" class="btn btn-default" id="register_btn">Register</button>
 		  </form>
 		   </div>
+		   <br>
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
     
