@@ -37,11 +37,12 @@ function loadLoginForm () {
               } else if (request.status === 500) {
                   alert('Something went wrong on the server');
                   submit.value = 'Login';
-                  console.log(request.status);
+                  
               } else {
                   console.log(request.status);
                   alert('Something went wrong on the server');
                   submit.value = 'Login';
+                  console.log(request.status);
               }
               loadLogin();
           }  
