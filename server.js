@@ -116,7 +116,7 @@ function createtemplate2(data){
 					    ${content}
 					</p>
 				<div class="text-right">
-			        <button class="btn btn-default" id="like" class="glyphicon glyphicon-thumbs-up>Like it</button>
+			        <button class="btn btn-default" id="like" class="glyphicon glyphicon-thumbs-up">Like it</button>
 			    </div>
 				</div>
 			</div>
