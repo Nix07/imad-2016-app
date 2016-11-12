@@ -116,9 +116,9 @@ function createtemplate2(data){
 					    ${content}
 					</p>
 				</div>
-			</div>
-			<div class="text-right">
+				<div class="text-right">
 			    <button type="submit" class="btn btn-default" id="like">Like it</button>
+			</div>
 			</div>
 		</div>
 		<div class="row">
