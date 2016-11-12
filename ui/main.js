@@ -30,7 +30,7 @@ function loadLoginForm () {
         request.onreadystatechange = function () {
           if (request.readyState === XMLHttpRequest.DONE) {
               // Take some action
-              if (request.status === 200) {
+              if (request.status === 200 || request.status===0) {
                   submit.value = 'Success!';
               } else if (request.status === 403) {
                   submit.value = 'Invalid credentials. Try again?';
