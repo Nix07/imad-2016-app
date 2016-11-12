@@ -116,12 +116,12 @@ function createtemplate2(data){
 					    ${content}
 					</p>
 				<div class="text-right">
-			        <button class="btn btn-default" id="like" style="padding: 20px;">Like it</button>
+			        <button class="btn btn-default" id="like">Like it</button>
 			    </div>
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row" style="padding: 20px">
 		    <div class="col-md-8 col-md-offset-2">
         		<h4 class="page-header">Comments</h4>
                 <div id="comment_form"></div>
