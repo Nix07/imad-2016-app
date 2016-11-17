@@ -3,11 +3,35 @@ var currentArticleTitle = window.location.pathname.split('/')[2];
 
 function loadCommentForm () {
     var commentFormHtml = `
-        <h5>Submit a comment</h5>
-        <textarea id="comment_text" rows="5" cols="100" placeholder="Enter your comment here..."></textarea>
-        <br/>
-        <input type="submit" id="submit" value="Submit" class="btn btn-danger"/>
-        <br/>
+        <div class="col-md-8 col-md-offset-4">
+			<div class="col-md-12">
+				<div class="well">
+					<div class="text-right">
+						<button class="btn btn-danger" data-target="#comment" data-toggle="modal">Leave a reply</button>
+					</div>
+					<div class="modal fade" id="comment">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button class="close" data-dismiss="modal">&times;</button>
+									<h4 class="modal-title">Comment Box</h4>
+								</div>
+								<div class="modal-body">
+									<form>
+										<div class="form-group">
+											<textarea class="form-control" rows="5" style="font-size: 20px; color: grey;">Comments</textarea>
+										</div>
+									</form>
+								</div>
+								<div class="modal-footer">
+									<button class="btn btn-danger" data-dismiss="modal">Submit </button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
         `;
     var cmt = document.getElementById('comment_form');
     cmt.innerHTML = commentFormHtml;
