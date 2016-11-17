@@ -24,7 +24,7 @@ function loadCommentForm () {
 									</form>
 								</div>
 								<div class="modal-footer">
-									<input class="btn btn-danger" data-dismiss="modal" type="submit" id="submit" value="Submit"/>
+									<button class="btn btn-danger" data-dismiss="modal" id="submit">Submit </button>
 								</div>
 							</div>
 						</div>
