@@ -19,7 +19,7 @@ function loadCommentForm () {
 								<div class="modal-body">
 									<form>
 										<div class="form-group">
-											<textarea class="form-control" rows="5" style="font-size: 20px; color: grey;" id="comment_text" placeholder="Enter your comment here...></textarea>
+											<textarea class="form-control" rows="5" style="font-size: 20px; color: grey;" id="comment_text" placeholder="Enter your comment here..."></textarea>
 										</div>
 									</form>
 								</div>
