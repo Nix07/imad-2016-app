@@ -102,12 +102,13 @@ function loadComments () {
                 var commentsData = JSON.parse(this.responseText);
                 for (var i=0; i< commentsData.length; i++) {
                     var time = new Date(commentsData[i].timestamp);
-                    content += `<div class="comment" style="padding-top: 30px;">
-                        <p><i>${escapeHTML(commentsData[i].comment)}</i></p>
-                        <div class="commenter">
-                            ${commentsData[i].username} - ${time.toLocaleTimeString()} on ${time.toLocaleDateString()} 
-                        </div>
-                    </div>`;
+                    content += `div class="well">
+					<span class="lead">${commentsData[i].username}</span>
+					<span class="pull-right">${time.toLocaleTimeString()} on ${time.toLocaleDateString()}</span><hr>
+					<p>
+						${escapeHTML(commentsData[i].comment)}
+					</p>
+				</div>`;
                 }
                 comments.innerHTML = content;
             } else {
