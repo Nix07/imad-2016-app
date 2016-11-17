@@ -19,12 +19,12 @@ function loadCommentForm () {
 								<div class="modal-body">
 									<form>
 										<div class="form-group">
-											<textarea class="form-control" rows="5" style="font-size: 20px; color: grey;">Comments</textarea>
+											<textarea class="form-control" rows="5" style="font-size: 20px; color: grey; id="comment_text"">Comments</textarea>
 										</div>
 									</form>
 								</div>
 								<div class="modal-footer">
-									<button class="btn btn-danger" data-dismiss="modal">Submit </button>
+									<button class="btn btn-danger" data-dismiss="modal" id="submit">Submit </button>
 								</div>
 							</div>
 						</div>
