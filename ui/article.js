@@ -102,7 +102,7 @@ function loadComments () {
                 var commentsData = JSON.parse(this.responseText);
                 for (var i=0; i< commentsData.length; i++) {
                     var time = new Date(commentsData[i].timestamp);
-                    content += `div class="well">
+                    content += `<div class="well">
 					<span class="lead">${commentsData[i].username}</span>
 					<span class="pull-right">${time.toLocaleTimeString()} on ${time.toLocaleDateString()}</span><hr>
 					<p>
