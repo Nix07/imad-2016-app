@@ -3,7 +3,7 @@ var currentArticleTitle = window.location.pathname.split('/')[2];
 
 function loadCommentForm () {
     var commentFormHtml = `
-        <div class="col-md-8 col-md-offset-4">
+        <div class="col-md-10 col-md-offset-2">
 			<div class="col-md-12">
 				<div class="well">
 					<div class="text-right">
