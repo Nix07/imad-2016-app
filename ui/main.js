@@ -24,8 +24,8 @@ function loadLoginForm () {
 			      <input type="password" class="form-control" id="password" placeholder="Enter password">
 			    </div>
 			    
-			    <button type="submit" class="btn btn-default btn-left" id="login_btn" style="padding= 50px;">Login</button>
-			    <button type="submit" class="btn btn-default" id="register_btn">Register</button>
+			    <button type="submit" class="btn btn-lg btn-primary btn-block btn-left" id="login_btn" style="padding= 50px;">Login</button>
+			    <button type="submit" class="btn btn-lg btn-primary btn-block" id="register_btn">Register</button>
 		  </form>
 	</div>
 	</div>
