@@ -1,6 +1,18 @@
 
 function loadLoginForm () {
     var loginHtml = `
+    <style>
+        .mobile {
+            width: 30%;
+            margin: 25px auto;
+        }
+
+        @media (max-width: 600px) {
+            .mobile {
+                width: 80%;
+                 margin: 25px auto;
+        }
+    </style>
       <div class="container" style="margin-top: 70px;">
       <div class="row">
           <h1 style="text-align: center;">LOGIN</h1>
