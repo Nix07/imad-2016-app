@@ -133,13 +133,17 @@
 					<textarea class="form-control" id="message" rows="10">Comments</textarea>
 				</div>
 				<div class="form-group">
-					<input class="btn btn-success btn-block"  type="submit">
+					<input class="btn btn-success btn-block"  id="push" type="submit">
 				</div>
 				<script>
-				    var name = document.getElementById('name').value;
-				    var email = document.getElementById('email').value;
-				    var subject = document.getElementById('subject').value;
-				    var message = document.getElementById('message').value;
+    				var register = document.getElementById('push');
+                    register.onclick = function () {
+    				    var name = document.getElementById('name').value;
+    				    var email = document.getElementById('email').value;
+    				    var subject = document.getElementById('subject').value;
+    				    var message = document.getElementById('message').value;
+    				    pool.query('INSERT INTO messages (name, email, subject, message) VALUES (name, email, subject, message)';
+                    }
 				</script>
 			</form>
 		</section>
