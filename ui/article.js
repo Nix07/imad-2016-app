@@ -105,12 +105,13 @@ function loadComments () {
                     var time = new Date(commentsData[i].timestamp);
                     content += `
                     <div class="well">
-    					<span class="lead">${commentsData[i].username}</span>
-    					<span class="pull-right">${time.toLocaleTimeString()} on ${time.toLocaleDateString()}</span><hr>
-    					<p>
-    						${escapeHTML(commentsData[i].comment)}
-    					</p>
-				    </div>`;
+					<span class="lead">${commentsData[i].username}</span>
+					<span class="pull-right">${time.toLocaleTimeString()} on ${time.toLocaleDateString()}</span><hr>
+					<p>
+						${escapeHTML(commentsData[i].comment)}
+					</p>
+				</div>
+				`;
                 }
                 comments.innerHTML = content;
             } else {
