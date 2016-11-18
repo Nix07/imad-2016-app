@@ -19,13 +19,13 @@ function loadLoginForm () {
           <div class="mobile">
               <form>
                   <div class="form-group">
-                      <input class="form-control" type="email" id="username" placeholder="Username">
+                      <input type="text" class="form-control" id="username" placeholder="Username">
                   </div>
                   <div class="form-group">
                           <input class="form-control" type="password" id="password" placeholder="Password">
                   </div>
                   <div class="form-group">
-                      <button class="btn btn-lg btn-primary btn-block" id="register_btn">Submit!</button>
+                      <button class="btn btn-lg btn-primary btn-block" id="register_btn">Submit</button>
                   </div>
               </form>
           </div>
