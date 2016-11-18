@@ -227,48 +227,48 @@ app.get('/logout', function (req, res) {
    delete req.session.auth;
    res.send(`
         <!DOCTYPE html> 
-<html>
-	<head>
-		<title>My Blog</title>
-		<link rel="stylesheet" href="/css/bootstrap.css">
-		<link rel="stylesheet" href="/css/style2.css">
-		<script src="/js/jquery.js"></script>
-		<script src="/js/bootstrap.js"></script>
-	</head>
-
-	<body>
-		<nav class="navbar navbar-custom">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#">The Blog</a>
-				</div>
-				
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="/">Home</a></li>
-					<li><a href="/index3.html">The Blog</a></li>
-					<li><a href="/about.html">About Me</a></li>
-					<li><a href="/index4.html">Gallery</a></li>
-					<li><a href="/index5.html">Login/Register</a></li>
-				</ul>
-			</div>
-		</nav>
-		<header style="background: url(/images/header.jpg)">
-			<div class="text-center">
-				<h1>The Blog</h1>
-			<div class="lead">
-				'The Blog' for dummies...
-			</div>
-			</div>
-		</header>
-		<div class="jumbotron text-center"><h3>You are Logged Out</h3></div>
-		<div class="container-fluid">
-			<hr>
-				<div class="text-center">
-					<font size="4">Made with ♥ by <b>Nikhil Prakash</b></font>
-				</div>
-		</div>
-	</body>
-</html>
+    <html>
+    	<head>
+    		<title>My Blog</title>
+    		<link rel="stylesheet" href="/css/bootstrap.css">
+    		<link rel="stylesheet" href="/css/style2.css">
+    		<script src="/js/jquery.js"></script>
+    		<script src="/js/bootstrap.js"></script>
+    	</head>
+    
+    	<body>
+    		<nav class="navbar navbar-custom">
+    			<div class="container-fluid">
+    				<div class="navbar-header">
+    					<a class="navbar-brand" href="#">The Blog</a>
+    				</div>
+    				
+    				<ul class="nav navbar-nav navbar-right">
+    					<li><a href="/">Home</a></li>
+    					<li><a href="/index3.html">The Blog</a></li>
+    					<li><a href="/about.html">About Me</a></li>
+    					<li><a href="/index4.html">Gallery</a></li>
+    					<li><a href="/index5.html">Login/Register</a></li>
+    				</ul>
+    			</div>
+    		</nav>
+    		<header style="background: url(/images/header.jpg)">
+    			<div class="text-center">
+    				<h1>The Blog</h1>
+    			<div class="lead">
+    				'The Blog' for dummies...
+    			</div>
+    			</div>
+    		</header>
+    		<div class="jumbotron text-center"><h3>You are Logged Out</h3></div>
+    		<div class="container-fluid">
+    			<hr>
+    				<div class="text-center">
+    					<font size="4">Made with ♥ by <b>Nikhil Prakash</b></font>
+    				</div>
+    		</div>
+    	</body>
+    </html>
         `);
 });
 
@@ -347,6 +347,18 @@ app.get('/articles/:articleName',function (req,res){
         }
     });
 });
+
+funtion push_message() {
+    var register = document.getElementById('push');
+    register.onclick = function () {
+	    var name = document.getElementById('name').value;
+	    var email = document.getElementById('email').value;
+	    var subject = document.getElementById('subject').value;
+	    var message = document.getElementById('message').value;
+	    pool.query('INSERT INTO "messages" (name, email, subject, message) VALUES (name, email, subject, message');
+    }
+}
+
 
 
 app.get('/ui/:fileName', function (req, res) {
