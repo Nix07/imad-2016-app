@@ -15,13 +15,12 @@ function loadLoginForm () {
     </style>
     <div class="container-fluid col-md-6 col-md-offset-3 text-center">
     <div class="mobile">
+        <h1>Login/Register
 		  <form style="padding-right: 20px; padding-left=20px;">
 			    <div class="form-group">
-			      <label for="email">Username:</label>
 			      <input type="text" class="form-control" id="username" placeholder="Username">
 			    </div>
 			    <div class="form-group">
-			      <label for="pwd">Password:</label>
 			      <input type="password" class="form-control" id="password" placeholder="Enter password">
 			    </div>
 			    
