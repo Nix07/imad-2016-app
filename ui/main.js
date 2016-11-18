@@ -17,7 +17,7 @@ function loadLoginForm () {
     <div class="container" style="margin-top: 70px;">
         <div class="row">
             <h1 style="text-align: center">Create New Account!</h1>
-            <div class="mobile">
+            
 	            <form style="padding-right: 20px; padding-left=20px;">
 	                <div class="form-group">
 	                    <label for="email">Username:</label>
@@ -30,7 +30,7 @@ function loadLoginForm () {
 	                <button type="submit" class="btn btn-default btn-left" id="login_btn" style="padding= 50px;">Login</button>
 	                <button type="submit" class="btn btn-default" id="register_btn">Register</button>
 	            </form>
-	        </div>
+	       
 		</div>  
     </div>
         `;
