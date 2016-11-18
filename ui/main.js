@@ -3,7 +3,7 @@ function loadLoginForm () {
     var loginHtml = `
     <style>
         .mobile {
-            width: 30%;
+            width: 60%;
             margin: 25px auto;
         }
 
