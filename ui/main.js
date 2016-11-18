@@ -28,6 +28,12 @@ function loadLoginForm () {
 			    <button type="submit" class="btn btn-md btn-primary btn-block" id="register_btn">Register</button>
 		  </form>
 	</div>
+	<div class="container-fluid">
+			<hr>
+				<div class="text-center">
+					<font size="4">Made with ♥ by <b>Nikhil Prakash</b></font>
+				</div>
+		</div>
 	</div>
 	<br>
         `;
