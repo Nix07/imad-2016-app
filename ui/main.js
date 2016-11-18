@@ -14,22 +14,39 @@ function loadLoginForm () {
         }
     </style>
       <div class="container" style="margin-top: 70px;">
-      <div class="row">
-          <h1 style="text-align: center;">LOGIN</h1>
-          <div class="mobile">
-              <form>
-                  <div class="form-group">
-                      <input class="form-control" type="email" name="mailid" placeholder="E-mail">
-                  </div>
-                  <div class="form-group">
-                          <input class="form-control" type="password" name="password" placeholder="Password">
-                  </div>
-                  <div class="form-group">
-                      <button class="btn btn-lg btn-primary btn-block">Submit!</button>
-                  </div>
-              </form>
-          </div>
-      </div>
+        <div class="row">
+            <h1 style="text-align: center">Create New Account!</h1>
+            <div class="mobile">
+                <form action=" " method="POST">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="name" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="email" name="mailid" placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="password" name="password" placeholder="Set Password">
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <input class="form-control" type="tel" name="phno" placeholder="Mobile No.">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-lg btn-primary btn-block">Register!</button>
+                        </div>
+                </form>
+                <br>
+                <br>
+                <div>
+                    <h4>Already have an account ?</h4>
+                    <p>
+                        <a class="btn btn-primary btn-large btn-block" href="signin.html">Login Here!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
