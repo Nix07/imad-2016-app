@@ -112,7 +112,7 @@ function loadLoginForm () {
 function loadLoggedInUser (username) {
     var loginArea = document.getElementById('login_area');
     loginArea.innerHTML = `
-    <div class="jumbtron"><h1>Hi <b>${username}...</b></h1>,/div>
+    <div class="jumbotron"><h1>Hi <b>${username}...</b></h1></div>
         <div class="text-right">
         <a href="/logout" class='align-right'>Logout</a>
         </div>
