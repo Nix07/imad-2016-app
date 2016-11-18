@@ -17,7 +17,7 @@ function loadLoginForm () {
         <div class="row">
             <h1 style="text-align: center">Create New Account!</h1>
             <div class="mobile">
-                <form action=" " method="POST">
+                <form>
                         <div class="form-group">
                             <input class="form-control" type="text" name="name" placeholder="Full Name">
                         </div>
