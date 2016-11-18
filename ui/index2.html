@@ -135,17 +135,7 @@
 				<div class="form-group">
 					<input class="btn btn-success btn-block"  id="push" type="submit">
 				</div>
-				<script>
-				    <script type="text/javascript" src="/server.js">
-    				var register = document.getElementById('push');
-                    register.onclick = function () {
-    				    var name = document.getElementById('name').value;
-    				    var email = document.getElementById('email').value;
-    				    var subject = document.getElementById('subject').value;
-    				    var message = document.getElementById('message').value;
-    				    pool.query('INSERT INTO "messages" (name, email, subject, message) VALUES (name, email, subject, message');
-                    }
-				</script>
+				<script type="text/javascript" src="/server.js">
 			</form>
 		</section>
 	</body>
