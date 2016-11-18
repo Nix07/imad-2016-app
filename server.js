@@ -260,7 +260,7 @@ app.get('/logout', function (req, res) {
 			</div>
 			</div>
 		</header>
-		<div class="jumbotron>You are Logged Out</div>
+		<div class="jumbotron">You are Logged Out</div>
 		<div class="container-fluid">
 			<hr>
 				<div class="text-center">
