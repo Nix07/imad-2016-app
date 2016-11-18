@@ -225,7 +225,51 @@ app.get('/check-login', function (req, res) {
 
 app.get('/logout', function (req, res) {
    delete req.session.auth;
-   res.send('<html><head><link rel="stylesheet" href="css/bootstrap.css"></head><body><div class="jumbotron text-center">Logged out!<div><br/><a href="/index3.html">Back to home</a></body></html>');
+   res.send(`
+        <!DOCTYPE html> 
+<html>
+	<head>
+		<title>My Blog</title>
+		<link rel="stylesheet" href="/css/bootstrap.css">
+		<link rel="stylesheet" href="/css/style2.css">
+		<script src="/js/jquery.js"></script>
+		<script src="/js/bootstrap.js"></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-custom">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">The Blog</a>
+				</div>
+				
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="/">Home</a></li>
+					<li><a href="/index3.html">The Blog</a></li>
+					<li><a href="/about.html">About Me</a></li>
+					<li><a href="/index4.html">Gallery</a></li>
+					<li><a href="/index5.html">Login/Register</a></li>
+				</ul>
+			</div>
+		</nav>
+		<header style="background: url(/images/header.jpg)">
+			<div class="text-center">
+				<h1>The Blog</h1>
+			<div class="lead">
+				'The Blog' for dummies...
+			</div>
+			</div>
+		</header>
+		<div class="jumbotron>You are Logged Out</div>
+		<div class="container-fluid">
+			<hr>
+				<div class="text-center">
+					<font size="4">Made with ♥ by <b>Nikhil Prakash</b></font>
+				</div>
+		</div>
+	</body>
+</html>
+        `);
 });
 
 var pool = new Pool(config);
