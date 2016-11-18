@@ -75,7 +75,6 @@ function loadLoginForm () {
     
     var register = document.getElementById('register_btn');
     register.onclick = function () {
-        alert('asd');
         // Create a request object
         var request = new XMLHttpRequest();
         
@@ -87,6 +86,7 @@ function loadLoginForm () {
                   alert('User created successfully');
                   register.value = 'Registered!';
               } else {
+                  console.log(request.status);
                   alert('Could not register the user');
                   register.value = 'Register';
               }
