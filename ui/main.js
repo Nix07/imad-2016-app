@@ -1,22 +1,49 @@
 
 function loadLoginForm () {
     var loginHtml = `
-    <h1 class="text-center">Login/Register</h1>
-        <div class="container-fluid col-md-6 col-md-offset-3 text-center">
-		  <form style="padding-right: 20px; padding-left=20px;">
-		    <div class="form-group">
-		      <label for="email">Username:</label>
-		      <input type="text" class="form-control" id="username" placeholder="Username">
-		    </div>
-		    <div class="form-group">
-		      <label for="pwd">Password:</label>
-		      <input type="password" class="form-control" id="password" placeholder="Enter password">
-		    </div>
-		    <button type="submit" class="btn btn-default btn-left" id="login_btn" style="padding= 50px;">Login</button>
-		    <button type="submit" class="btn btn-default" id="register_btn">Register</button>
-		  </form>
-		   </div>
-		   <br>
+    <style>
+        .mobile {
+            width: 30%;
+            margin: 25px auto;
+        }
+
+        @media (max-width: 600px) {
+            .mobile {
+                width: 80%;
+                 margin: 25px auto;
+        }
+    </style>
+      <div class="container" style="margin-top: 70px;">
+        <div class="row">
+            <h1 style="text-align: center">Create New Account!</h1>
+            <div class="mobile">
+                <form action=" " method="POST">
+                        <div class="form-group">
+                            <input class="form-control" type="text" name="name" placeholder="Full Name">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="email" name="mailid" placeholder="E-mail">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="password" name="password" placeholder="Set Password">
+
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-lg btn-primary btn-block" id="register_btn" type="submit">Register</button>
+                        </div>
+                </form>
+                <br>
+                <br>
+                <div>
+                    <h4>Already have an account ?</h4>
+                    <p>
+                        <a class="btn btn-primary btn-large btn-block" href="signin.html">Login Here!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
     
