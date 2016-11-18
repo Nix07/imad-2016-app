@@ -85,8 +85,11 @@ function loadLoginForm () {
               if (request.status === 200) {
                   alert('User created successfully');
                   register.value = 'Registered!';
-              } else {
-                  console.log(request.status);
+              }else if (request.status === 0) {
+                  alert('User created successfully');
+                  register.value = 'Registered!';
+              }
+              else {
                   alert('Could not register the user');
                   register.value = 'Register';
               }
