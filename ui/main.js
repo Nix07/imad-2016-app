@@ -1,7 +1,20 @@
 
 function loadLoginForm () {
     var loginHtml = `
+    <style>
+        .mobile {
+            width: 30%;
+            margin: 25px auto;
+        }
+
+        @media (max-width: 600px) {
+            .mobile {
+                width: 80%;
+                 margin: 25px auto;
+        }
+    </style>
     <div class="container-fluid col-md-6 col-md-offset-3 text-center">
+    <div class="mobile">
 		  <form style="padding-right: 20px; padding-left=20px;">
 			    <div class="form-group">
 			      <label for="email">Username:</label>
@@ -15,8 +28,9 @@ function loadLoginForm () {
 			    <button type="submit" class="btn btn-default btn-left" id="login_btn" style="padding= 50px;">Login</button>
 			    <button type="submit" class="btn btn-default" id="register_btn">Register</button>
 		  </form>
-		   </div>
-		   <br>
+	</div>
+	</div>
+	<br>
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
     
