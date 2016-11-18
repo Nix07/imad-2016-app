@@ -28,13 +28,8 @@ function loadLoginForm () {
                             <input class="form-control" type="password" name="password" placeholder="Set Password">
 
                         </div>
-
-
                         <div class="form-group">
-                            <input class="form-control" type="tel" name="phno" placeholder="Mobile No.">
-                        </div>
-                        <div class="form-group">
-                            <button class="btn btn-lg btn-primary btn-block">Register</button>
+                            <button class="btn btn-lg btn-primary btn-block" id="register_btn" type="submit">Register</button>
                         </div>
                 </form>
                 <br>
