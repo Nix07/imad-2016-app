@@ -1,22 +1,36 @@
 
 function loadLoginForm () {
     var loginHtml = `
-    <div class="container-fluid col-md-6 col-md-offset-3 text-center">
-	  <form style="padding-right: 20px; padding-left=20px;">
-	    <div class="form-group">
-	      <label for="email">Username:</label>
-	      <input type="text" class="form-control" id="username" placeholder="Username">
-	    </div>
-	    <div class="form-group">
-	      <label for="pwd">Password:</label>
-	      <input type="password" class="form-control" id="password" placeholder="Enter password">
-	    </div>
-	    
-	    <button type="submit" class="btn btn-default btn-left" id="login_btn" style="padding= 50px;">Login</button>
-	    <button type="submit" class="btn btn-default" id="register_btn">Register</button>
-	  </form>
+    <style>
+        .mobile {
+            width: 30%;
+            margin: 25px auto;
+        }
+
+        @media (max-width: 600px) {
+            .mobile {
+                width: 80%;
+                 margin: 25px auto;
+        }
+    </style>
+    <div class="container" style="margin-top: 70px;">
+      <div class="row">
+          <h1 style="text-align: center;">LOGIN</h1>
+          <div class="mobile">
+              <form>
+                  <div class="form-group">
+                      <input class="form-control" type="email" id="username" placeholder="Username">
+                  </div>
+                  <div class="form-group">
+                          <input class="form-control" type="password" id="password" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                      <button class="btn btn-lg btn-primary btn-block" id="register_btn">Submit!</button>
+                  </div>
+              </form>
+          </div>
+      </div>
     </div>
-		   <br>
         `;
     document.getElementById('login_area').innerHTML = loginHtml;
     
