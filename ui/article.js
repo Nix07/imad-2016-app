@@ -9,6 +9,7 @@ function loadCommentForm () {
 					<div class="text-right">
 						<button class="btn btn-danger" data-target="#comment" data-toggle="modal">Leave a reply</button>
 					</div>
+					<br>
 					<div class="modal fade" id="comment">
 						<div class="modal-dialog">
 							<div class="modal-content">
@@ -102,13 +103,14 @@ function loadComments () {
                 var commentsData = JSON.parse(this.responseText);
                 for (var i=0; i< commentsData.length; i++) {
                     var time = new Date(commentsData[i].timestamp);
-                    content += `<div class="well">
-					<span class="lead">${commentsData[i].username}</span>
-					<span class="pull-right">${time.toLocaleTimeString()} on ${time.toLocaleDateString()}</span><hr>
-					<p>
-						${escapeHTML(commentsData[i].comment)}
-					</p>
-				</div>`;
+                    content += `
+                    <div class="well">
+    					<span class="lead">${commentsData[i].username}</span>
+    					<span class="pull-right">${time.toLocaleTimeString()} on ${time.toLocaleDateString()}</span><hr>
+    					<p>
+    						${escapeHTML(commentsData[i].comment)}
+    					</p>
+				    </div>`;
                 }
                 comments.innerHTML = content;
             } else {
