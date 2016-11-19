@@ -71,7 +71,7 @@ function createtemplate2(data){
 					    ${content}
 					</p>
 				<div>
-                    <button class="btn btn-primary">Like</button>
+                    <button class="btn btn-default">Like</button>
                 </div>
 				</div>
 			</div>
