@@ -348,7 +348,7 @@ app.get('/articles/:articleName',function (req,res){
     });
 });
 
-/*funtion push_message() {
+funtion push_message() {
     var register = document.getElementById('push');
     register.onclick = function () {
 	    var name = document.getElementById('name').value;
@@ -357,7 +357,7 @@ app.get('/articles/:articleName',function (req,res){
 	    var message = document.getElementById('message').value;
 	    pool.query('INSERT INTO "messages" (name, email, subject, message) VALUES (name, email, subject, message');
     }
-}*/
+}
 
 
 
