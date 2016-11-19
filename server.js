@@ -70,15 +70,16 @@ function createtemplate2(data){
 					<p class="lead">
 					    ${content}
 					</p>
-				<div>
-                    <button class="btn btn-default">Like</button>
-                </div>
+				
 				</div>
 			</div>
 		</div>
 		<div class="row" style="padding: 20px">
 		    <div class="col-md-8 col-md-offset-2">
-        		<h4 class="page-header">Comments</h4>
+        		<h4 class="page-header">Comments <div>
+                    <button class="btn btn-default">Like<span class="glyphicon glyphicon-thumbs-up"></span></button>
+                </div></h4>
+        		
                 <div id="comment_form"></div>
     			<div id="comments">
                     <center>Loading comments...</center>
