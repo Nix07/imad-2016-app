@@ -1,4 +1,3 @@
-alert("Loaded");
 var register = document.getElementById('submit_btn');
   register.onclick = function () {
       // Create a request object
