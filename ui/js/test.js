@@ -33,7 +33,7 @@ var register = document.getElementById('submit_btn');
   
   };
 
-app.post('/message', function (req, res) {
+/*app.post('/message', function (req, res) {
    // username, password
    // {"username": "tanmai", "password": "password"}
    // JSON
@@ -50,4 +50,4 @@ app.post('/message', function (req, res) {
           res.send('Message sent : ' + subject);
       }
    });
-});
+});*/
