@@ -8,15 +8,15 @@ var register = document.getElementById('submit_btn');
         if (request.readyState === XMLHttpRequest.DONE) {
             // Take some action
             if (request.status === 200) {
-                alert('User created successfully');
+                alert('Message sent successfully');
                 register.value = 'Registered!';
             }else if (request.status === 0) {
-                alert('User created successfully');
+                alert('Message sent successfully');
                 register.value = 'Registered!';
             }
             else {
                 console.log(request.status);
-                alert('Could not register the user');
+                alert('Error in sending message');
                 register.value = 'Register';
             }
         }
@@ -30,7 +30,7 @@ var register = document.getElementById('submit_btn');
       request.open('POST', '/message', true);
       request.setRequestHeader('Content-Type', 'application/json');
       request.send(JSON.stringify({name: name, email: email,subject: subject, message:message}));  
-      register.value = 'Registering...';
+      register.value = 'Sending...';
   
   };
 
