@@ -15,6 +15,7 @@ var register = document.getElementById('submit_btn');
                 register.value = 'Registered!';
             }
             else {
+                console.log(request.status);
                 alert('Could not register the user');
                 register.value = 'Register';
             }
