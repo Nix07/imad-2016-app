@@ -76,10 +76,10 @@ function createtemplate2(data){
 		</div>
 		<div class="row" style="padding: 20px">
 		    <div class="col-md-8 col-md-offset-2">
-        		<h4 class="page-header">Comments <div>
-                    <button class="btn btn-default">Like<span class="glyphicon glyphicon-thumbs-up"></span></button>
-                </div></h4>
-        		
+        		<h4 class="page-header">Comments</h4>
+        		<div>
+                    <button class="btn btn-default"><span class="glyphicon glyphicon-thumbs-up"></span>  Like</button>
+                </div>
                 <div id="comment_form"></div>
     			<div id="comments">
                     <center>Loading comments...</center>
