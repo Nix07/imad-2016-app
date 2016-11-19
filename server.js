@@ -284,6 +284,24 @@ app.post('/submit-comment/articles/:articleName', function (req, res) {
     }
 });
 
+app.post('/message', function (req, res) {
+   // username, password
+   // {"username": "tanmai", "password": "password"}
+   // JSON
+   var name = req.body.name;
+   var email = req.body.email;
+   var subject = req.body.subject;
+   var message = req.body.message;
+   //var salt = crypto.randomBytes(128).toString('hex');
+   //var dbString = hash(password, salt);
+   pool.query('INSERT INTO "user" (name, email, subject, message) VALUES (name, email, subject, message)', [username, dbString], function (err, result) {
+      if (err) {
+          res.status(500).send(err.toString());
+      } else {
+          res.send('Message sent : ' + subject);
+      }
+   });
+});
 
 app.get('/articles/:articleName',function (req,res){
    // var articleName = req.params.articleName;
