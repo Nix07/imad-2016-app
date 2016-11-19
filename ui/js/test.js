@@ -26,7 +26,7 @@ var register = document.getElementById('submit_btn');
       var email = document.getElementById('email').value;
       var subject = document.getElementById('subject').value;
       var message = document.getElementById('message').value;
-      request.open('POST', '/create-user', true);
+      request.open('POST', '/message', true);
       request.setRequestHeader('Content-Type', 'application/json');
       request.send(JSON.stringify({name: name, email: email,subject: subject, message:message}));  
       register.value = 'Registering...';
