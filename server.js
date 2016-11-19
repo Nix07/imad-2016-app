@@ -348,19 +348,6 @@ app.get('/articles/:articleName',function (req,res){
     });
 });
 
-/*funtion push_message() {
-    var register = document.getElementById('push');
-    register.onclick = function () {
-	    var name = document.getElementById('name').value;
-	    var email = document.getElementById('email').value;
-	    var subject = document.getElementById('subject').value;
-	    var message = document.getElementById('message').value;
-	    pool.query('INSERT INTO "messages" (name, email, subject, message) VALUES (name, email, subject, message');
-    }
-}*/
-
-
-
 app.get('/ui/:fileName', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', req.params.fileName));
 });
