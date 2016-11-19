@@ -77,9 +77,6 @@ function createtemplate2(data){
 		<div class="row" style="padding: 20px">
 		    <div class="col-md-8 col-md-offset-2">
         		<h4 class="page-header">Comments</h4>
-        		<div>
-                    <button class="btn btn-default"><span class="glyphicon glyphicon-thumbs-up"></span>  Like</button>
-                </div>
                 <div id="comment_form"></div>
     			<div id="comments">
                     <center>Loading comments...</center>
@@ -287,24 +284,6 @@ app.post('/submit-comment/articles/:articleName', function (req, res) {
     }
 });
 
-app.post('/message', function (req, res) {
-   // username, password
-   // {"username": "tanmai", "password": "password"}
-   // JSON
-   var name = req.body.name;
-   var email = req.body.email;
-   var subject = req.body.subject;
-   var message = req.body.message;
-   //var salt = crypto.randomBytes(128).toString('hex');
-   //var dbString = hash(password, salt);
-   pool.query('INSERT INTO messages (name, email, subject, message) VALUES ($1, $2, $3, $4)',[name, email, subject, message], function (err, result) {
-      if (err) {
-          res.status(500).send(err.toString());
-      } else {
-          res.send('Message sent : ' + subject);
-      }
-   });
-});
 
 app.get('/articles/:articleName',function (req,res){
    // var articleName = req.params.articleName;
@@ -348,15 +327,6 @@ app.get('/css/lightbox.css', function (req, res) {
 
 app.get('/js/bootstrap.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','js', 'bootstrap.js'));
-});
-
-app.get('/ui/js/test.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui','js', 'test.js'));
-});
-
-
-app.get('/ui/js/test.js', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui','js', 'test.js'));
 });
 
 app.get('/ui/article.js', function (req, res) {
