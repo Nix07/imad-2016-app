@@ -292,7 +292,6 @@ app.post('/message', function (req, res) {
    var email = req.body.email;
    var subject = req.body.subject;
    var message = req.body.message;
-   console.log(name);
    //var salt = crypto.randomBytes(128).toString('hex');
    //var dbString = hash(password, salt);
    pool.query('INSERT INTO messages (name, email, subject, message) VALUES ($1, $2, $3, $4)',[name, email, subject, message], function (err, result) {
