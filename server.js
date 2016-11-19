@@ -294,7 +294,7 @@ app.post('/message', function (req, res) {
    var message = req.body.message;
    //var salt = crypto.randomBytes(128).toString('hex');
    //var dbString = hash(password, salt);
-   pool.query('INSERT INTO "user" (name, email, subject, message) VALUES (name, email, subject, message)', [username, dbString], function (err, result) {
+   pool.query('INSERT INTO "user" (name, email, subject, message) VALUES (name, email, subject, message)', function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
