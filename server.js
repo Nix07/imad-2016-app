@@ -91,7 +91,7 @@ function createtemplate2(data){
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 						<hr>
 						<ul class="list-inline text-center">
-	                        <font size="4">Made with â¥ by <b>Nikhil Prakash</b></font>
+	                        <font size="4">Made with ♥ by <b>Nikhil Prakash</b></font>
 	                        <li>
 	                            <a href="https://twitter.com/imnix07">
 	                                <span class="fa-stack fa-lg">
