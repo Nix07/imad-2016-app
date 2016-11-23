@@ -221,6 +221,15 @@ app.get('/logout', function (req, res) {
     				<div class="text-center">
     					<font size="4">Made with ♥ by <b>Nikhil Prakash</b></font>
     				</div>
+    				<div class="text-right">
+    				
+                                    <a href="https://twitter.com/vishal_gauba">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fa fa-circle fa-stack-2x"></i>
+                                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                </li>
     		</div>
     	</body>
     </html>
