@@ -36,6 +36,7 @@ function createtemplate2(data){
 		<link rel="stylesheet" href="/css/style2.css">
 		<script src="/js/jquery.js"></script>
 		<script src="/js/bootstrap.js"></script>
+		<script src="https://use.fontawesome.com/a772b32689.js"></script>
 	</head>
 
 	<body>
@@ -84,12 +85,42 @@ function createtemplate2(data){
                 <script type="text/javascript" src="/ui/article.js"></script>
             </div>
 		</div>
-		<div class="container-fluid">
-			<hr>
-				<div class="text-center">
-					<font size="4">Made with ♥ by <b>Nikhil Prakash</b></font>
-				</div>
-		</div>
+	<footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+						<hr>
+						<ul class="list-inline text-center">
+	                        <font size="4">Made with â¥ by <b>Nikhil Prakash</b></font>
+	                        <li>
+	                            <a href="https://twitter.com/vishal_gauba">
+	                                <span class="fa-stack fa-lg">
+	                                    <i class="fa fa-circle fa-stack-2x"></i>
+	                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+	                                </span>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="https://www.facebook.com/vishal.gauba">
+	                                <span class="fa-stack fa-lg">
+	                                    <i class="fa fa-circle fa-stack-2x"></i>
+	                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+	                                </span>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="https://github.com/flamefractal">
+	                                <span class="fa-stack fa-lg">
+	                                    <i class="fa fa-circle fa-stack-2x"></i>
+	                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+	                                </span>
+	                            </a>
+	                        </li>
+	                    </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
 	</body>
 </html>
         `;
