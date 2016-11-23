@@ -5,9 +5,6 @@ function loadCommentForm () {
     var commentFormHtml = `
         <div class="row">
 			<div class="col-md-12">
-			    <div>
-                    <button class="btn btn-default"><span class="glyphicon glyphicon-thumbs-up"></span>  Like</button>
-                </div>
 				<div class="well">
 					<div class="text-right">
 						<button class="btn btn-danger" data-target="#comment" data-toggle="modal">Leave a reply</button>
@@ -107,6 +104,9 @@ function loadComments () {
                 for (var i=0; i< commentsData.length; i++) {
                     var time = new Date(commentsData[i].timestamp);
                     content += `
+                    <div>
+                    <button class="btn btn-default"><span class="glyphicon glyphicon-thumbs-up"></span>  Like</button>
+                    </div>
                     <div class="well">
 					<span class="lead">${commentsData[i].username}</span>
 					<span class="pull-right">${time.toLocaleTimeString()} on ${time.toLocaleDateString()}</span><hr>
