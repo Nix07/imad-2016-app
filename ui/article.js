@@ -104,9 +104,7 @@ function loadComments () {
                 for (var i=0; i< commentsData.length; i++) {
                     var time = new Date(commentsData[i].timestamp);
                     content += `
-                    <div>
-                    <button class="btn btn-default"><span class="glyphicon glyphicon-thumbs-up"></span>  Like</button>
-                    </div>
+                    
                     <div class="well">
 					<span class="lead">${commentsData[i].username}</span>
 					<span class="pull-right">${time.toLocaleTimeString()} on ${time.toLocaleDateString()}</span><hr>
