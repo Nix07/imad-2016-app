@@ -81,7 +81,7 @@ function createtemplate2(data){
         		<h4 class="page-header">Comments</h4>
                 <div id="comment_form"></div>
     			<div id="comments">
-                    <center>Loading comments...</center>
+                    <div style="text-align: center;">Loading comments...</div>
                 </div>
                 <script type="text/javascript" src="/ui/article.js"></script>
             </div>
