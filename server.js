@@ -248,21 +248,42 @@ app.get('/logout', function (req, res) {
     			</div>
     		</header>
     		<div class="jumbotron text-center"><h3>You are Logged Out</h3></div>
-    		<div class="container-fluid">
-    			<hr>
-    				<div class="text-center">
-    					<font size="4">Made with ♥ by <b>Nikhil Prakash</b></font>
-    				</div>
-    				<div class="text-right">
-    				
-                                    <a href="https://twitter.com/vishal_gauba">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                        </span>
-                                    </a>
-                                </li>
-    		</div>
+    		<footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+						<hr>
+						<ul class="list-inline text-center">
+	                        <li style="font-size:4;">Made with ♥ by <b>Nikhil Prakash</b></li>
+	                        <li>
+	                            <a href="https://twitter.com/imnix07">
+	                                <span class="fa-stack fa-lg">
+	                                    <i class="fa fa-circle fa-stack-2x"></i>
+	                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+	                                </span>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="https://www.facebook.com/nix.prakash">
+	                                <span class="fa-stack fa-lg">
+	                                    <i class="fa fa-circle fa-stack-2x"></i>
+	                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+	                                </span>
+	                            </a>
+	                        </li>
+	                        <li>
+	                            <a href="https://github.com/nix07">
+	                                <span class="fa-stack fa-lg">
+	                                    <i class="fa fa-circle fa-stack-2x"></i>
+	                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+	                                </span>
+	                            </a>
+	                        </li>
+	                    </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
     	</body>
     </html>
         `);
