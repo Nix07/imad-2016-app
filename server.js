@@ -32,7 +32,7 @@ function createtemplate2(data){
 <html>
 	<head>
 		<title>My Blog</title>
-		<link rel="icon" href="images/madi.png" type="image/png">
+		<link rel="icon" href="/ui/images/madi.png" type="image/png">
 		<link rel="stylesheet" href="/css/bootstrap.css">
 		<link rel="stylesheet" href="/css/style2.css">
 		<script src="/js/jquery.js"></script>
