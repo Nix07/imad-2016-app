@@ -29,7 +29,7 @@ function createtemplate2(data){
     var content = data.content;
         var htmltemplate = `
         <!DOCTYPE html> 
-<html lang="en">
+<html>
 	<head>
 		<title>My Blog</title>
 		<link rel="icon" href="/images/madi.png" type="image/png">
