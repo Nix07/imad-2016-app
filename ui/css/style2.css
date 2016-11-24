@@ -21,17 +21,17 @@ header {
 header h1 {
 	font-size: 50px;
 }
-#posts {
+.posts {
 	border-bottom: 1px solid gray;
 }
-#posts h1 {
+.posts h1 {
 	font-weight: bold;
 }
-#posts h1 a {
+.posts h1 a {
 	color: black;
 	text-decoration: none;
 }
-#posts h1 a:hover {
+.posts h1 a:hover {
 	color: brown;
 }
 .down-btn {
