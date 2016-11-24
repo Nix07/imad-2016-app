@@ -69,10 +69,7 @@ function createtemplate2(data){
 				<div class="posts">
 					<h1><a href="#">${heading}</a></h1>
 					<p>${date.toDateString()} | ${author}</p>
-					<p class="lead">
-					    ${content}
-					</p>
-				
+					 ${content}
 				</div>
 			</div>
 		</div>
