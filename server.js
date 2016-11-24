@@ -29,7 +29,7 @@ function createtemplate2(data){
     var content = data.content;
         var htmltemplate = `
         <!DOCTYPE html> 
-<html>
+<html lang="en">
 	<head>
 		<title>My Blog</title>
 		<link rel="icon" href="/images/madi.png" type="image/png">
@@ -66,7 +66,7 @@ function createtemplate2(data){
 		</header>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<div id="posts">
+				<div class="posts">
 					<h1><a href="#">${heading}</a></h1>
 					<p>${date.toDateString()} | ${author}</p>
 					<p class="lead">
