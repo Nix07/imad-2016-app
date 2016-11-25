@@ -448,14 +448,6 @@ app.get('/butterfly.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'butterfly.html'));
 });
 
-app.get('/css/demoo.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui','css' ,'demo.css'));
-});
-
-app.get('/css/reoset.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui','css' ,'reset.css'));
-});
-
 app.get('/css/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','css', 'style.css'));
 });
