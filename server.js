@@ -66,7 +66,7 @@ function createtemplate2(data){
 		</header>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<div class="posts">
+				<div class="posts" style="padding: 10px;">
 					<h1><a href="#">${heading}</a></h1>
 					<p>${date.toDateString()} | ${author}</p>
 					 ${content}
