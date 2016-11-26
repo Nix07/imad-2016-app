@@ -44,6 +44,9 @@ function createtemplate2(data){
 	            font-family: 'Baloo Bhaina', cursive;
 	            font-size: 17px;
 	        }
+	        .lead {
+	            
+	        }
 		</style>
 	</head>
 
@@ -74,7 +77,7 @@ function createtemplate2(data){
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<div class="posts" style="padding: 10px;">
-					<h1><a href="#">${heading}</a></h1>
+					<h1 style="font-family: 'Bungee', cursive;"><a href="#">${heading}</a></h1>
 					<p style="font-family: 'Bungee', cursive;">${date.toDateString()} | ${author}</p>
 					 ${content}
 				</div>
