@@ -8,15 +8,15 @@ var register = document.getElementById('submit_btn');
             // Take some action
             if (request.status === 200) {
                 alert('Message sent successfully');
-                register.value = 'Send';
+                register.value = 'Submit';
             }else if (request.status === 0) {
                 alert('Message sent successfully');
-                register.value = 'Send';
+                register.value = 'Submit';
             }
             else {
                 console.log(request.status);
                 alert('Error in sending message');
-                register.value = 'Register';
+                register.value = 'Submit';
             }
         }
       };
