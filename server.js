@@ -353,13 +353,11 @@ app.post('/message', function (req, res) {
    var subject = req.body.subject;
    var message = req.body.message;
    if (name==='' || message==='' || email==='') {
-        alert("Username/password can't be empty!");
-        return;
+       return alert("Username/password can't be empty!");
     }
     
     if (name.length===0 || message.length===0 || email.length===0){
-        alert("Username/password can't be empty!");
-        return;
+        return alert("Username/password can't be empty!");
     }
    //var salt = crypto.randomBytes(128).toString('hex');
    //var dbString = hash(password, salt);
