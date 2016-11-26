@@ -15,7 +15,7 @@ function loadLoginForm () {
     </style>
     <div class="container-fluid col-md-6 col-md-offset-3 text-center">
     <div class="mobile">
-        <h1>Login/Register</h1>
+        <h1 style="font-family:'Bungee', cursive;">Login/Register</h1>
 		  <form style="padding-right: 20px; padding-left=20px;padding=top:30px;">
 			    <div class="form-group">
 			      <input type="text" class="form-control" id="username" placeholder="Username">
