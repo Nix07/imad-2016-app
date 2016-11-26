@@ -477,6 +477,10 @@ app.get('/css/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','css', 'style.css'));
 });
 
+app.get('/css/demo.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui','css', 'demo.css'));
+});
+
 app.get('/js/jquery.easing.1.3.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui','js', 'jquery.easing.1.3.js'));
 });
