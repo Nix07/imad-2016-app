@@ -23,6 +23,7 @@ header h1 {
 }
 .posts {
 	border-bottom: 1px solid gray;
+	padding-left: 10px;
 }
 .posts h1 {
 	font-weight: bold;
