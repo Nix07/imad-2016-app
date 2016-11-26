@@ -38,13 +38,20 @@ function createtemplate2(data){
 		<script src="/js/jquery.js"></script>
 		<script src="/js/bootstrap.js"></script>
 		<script src="https://use.fontawesome.com/a772b32689.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Bungee|Pacifico|Satisfy" rel="stylesheet">
+		<style>
+		    ul li{
+	            font-family: 'Baloo Bhaina', cursive;
+	            font-size: 17px;
+	        }
+		</style>
 	</head>
 
 	<body>
 		<nav class="navbar navbar-custom">
 			<div class="container-fluid">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="#">The Blog</a>
+					<a class="navbar-brand" href="#" style="font-family: 'Baloo Bhaina', cursive;">The Blog</a>
 				</div>
 				
 				<ul class="nav navbar-nav navbar-right">
@@ -57,10 +64,10 @@ function createtemplate2(data){
 			</div>
 		</nav>
 		<header style="background: url(/images/header.jpg)">
-			<div class="text-center">
-				<h1>The Blog</h1>
-			<div class="lead">
-				'The Blog' for dummies...
+			<div class="text-center" style="padding-top:50px;">
+				<h1 style="font-family:'Bungee', cursive;">The Blog</h1>
+			<div class="lead" style="font-family: 'Pacifico', cursive;">
+				'The Blog' for Dummies...
 			</div>
 			</div>
 		</header>
