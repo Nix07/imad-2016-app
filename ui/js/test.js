@@ -1,4 +1,3 @@
- alert('opo');
 var register = document.getElementById('submit_btn');
   register.onclick = function () {
       // Create a request object
@@ -24,7 +23,6 @@ var register = document.getElementById('submit_btn');
       
       // Make the request
       var name = document.getElementById('name').value;
-      //var email = document.getElementById('email').value;
       var subject = document.getElementById('subject').value;
       var message = document.getElementById('message').value;
        if (name==='' || message==='' || subject==='') {
@@ -38,7 +36,7 @@ var register = document.getElementById('submit_btn');
         }
       request.open('POST', '/message', true);
       request.setRequestHeader('Content-Type', 'application/json');
-      request.send(JSON.stringify({name: name,subject: subject, message: message}));  
+      request.send(JSON.stringify({name:name subject:subject , message:message}));  
       register.value = 'Sending...';
   
   };
