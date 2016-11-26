@@ -163,11 +163,13 @@ app.post('/login', function (req, res) {
    var username = req.body.username;
    var password = req.body.password;
     if (username==='' || password==='') {
-       return alert("Field can't be empty!");
+        alert("Field can't be empty!");
+        return;
     }
     
     if (username.length===0 || password.length===0){
-        return alert("Field can't be empty!");
+        alert("Field can't be empty!");
+        return;
     }
    pool.query('SELECT * FROM "user" WHERE username = $1', [username], function (err, result) {
       if (err) {
