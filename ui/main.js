@@ -30,7 +30,7 @@ function loadLoginForm () {
 	</div>
 	<div class="container-fluid">
 			<hr>
-				<div class="text-center">
+				<div class="text-center" style="font-family: 'Baloo Bhaina', cursive;'>
 					<font size="4">Made with ♥ by <b>Nikhil Prakash</b></font>
 				</div>
 		</div>
