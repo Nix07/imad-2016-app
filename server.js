@@ -352,7 +352,7 @@ app.post('/message', function (req, res) {
    var email = req.body.email;
    var subject = req.body.subject;
    var message = req.body.message;
-   if (username===''||password===''||email==='') {
+   if (username===''|| password===''|| email==='') {
         alert("Username/password can't be empty!");
         return;
     }
