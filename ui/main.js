@@ -73,12 +73,12 @@ function loadLoginForm () {
         console.log(username);
         console.log(password);
          if (username==='' || password==='') {
-           alert("Field can't be empty!");
+           alert("Username/Password can't be empty!");
            return;
         }
     
         if (username.length===0 || password.length===0){
-            alert("Field can't be empty!");
+            alert("Username/Password can't be empty!");
             return;
         }
         request.open('POST', '/login', true);
