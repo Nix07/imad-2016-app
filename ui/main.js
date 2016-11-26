@@ -72,12 +72,12 @@ function loadLoginForm () {
         var password = document.getElementById('password').value;
         console.log(username);
         console.log(password);
-         if (name==='' || message==='' || subject==='') {
+         if (username==='' || password==='') {
            alert("Field can't be empty!");
            return;
         }
     
-        if (name.length===0 || message.length===0 || subject.length===0){
+        if (username.length===0 || password.length===0){
             alert("Field can't be empty!");
             return;
         }
