@@ -1,8 +1,8 @@
+ alert('opo');
 var register = document.getElementById('submit_btn');
   register.onclick = function () {
       // Create a request object
       var request = new XMLHttpRequest();
-      alert('opo');
       // Capture the response and store it in a variable
       request.onreadystatechange = function () {
         if (request.readyState === XMLHttpRequest.DONE) {
