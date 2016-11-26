@@ -8,7 +8,7 @@ var register = document.getElementById('submit_btn');
             // Take some action
             if (request.status === 200) {
                 alert('Message sent successfully');
-                register.value = 'Send!';
+                register.value = 'Send';
             }else if (request.status === 0) {
                 alert('Message sent successfully');
                 register.value = 'Send';
