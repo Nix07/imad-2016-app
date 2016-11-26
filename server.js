@@ -361,7 +361,7 @@ app.post('/message', function (req, res) {
    var name = req.body.name;
    //var email = req.body.email;
    var subject = req.body.subject;
-   var messaee = req.body.message;
+   var message = req.body.message;
    pool.query('INSERT INTO messages (name, subject, message) VALUES ($1, $2, $3)',[name, subject, message], function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
