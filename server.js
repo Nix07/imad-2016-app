@@ -349,19 +349,19 @@ app.post('/message', function (req, res) {
    // {"username": "tanmai", "password": "password"}
    // JSON
    var name = req.body.name;
-   var email = req.body.email;
+   //var email = req.body.email;
    var subject = req.body.subject;
    var message = req.body.message;
-   if (name==='' || message==='' || email==='') {
-       return alert("Username/password can't be empty!");
+   if (name==='' || message==='' || subject==='') {
+       return alert("Field can't be empty!");
     }
     
-    if (name.length===0 || message.length===0 || email.length===0){
-        return alert("Username/password can't be empty!");
+    if (name.length===0 || message.length===0 || subject.length===0){
+        return alert("Field can't be empty!");
     }
    //var salt = crypto.randomBytes(128).toString('hex');
    //var dbString = hash(password, salt);
-   pool.query('INSERT INTO messages (name, email, subject, message) VALUES ($1, $2, $3, $4)',[name, email, subject, message], function (err, result) {
+   pool.query('INSERT INTO messages (name, subject, message) VALUES ($1, $2, $3)',[name, subject, message], function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
       } else {
