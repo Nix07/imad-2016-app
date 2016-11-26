@@ -72,6 +72,15 @@ function loadLoginForm () {
         var password = document.getElementById('password').value;
         console.log(username);
         console.log(password);
+         if (name==='' || message==='' || subject==='') {
+           alert("Field can't be empty!");
+           return;
+        }
+    
+        if (name.length===0 || message.length===0 || subject.length===0){
+            alert("Field can't be empty!");
+            return;
+        }
         request.open('POST', '/login', true);
         request.setRequestHeader('Content-Type', 'application/json');
         request.send(JSON.stringify({username: username, password: password}));  
