@@ -27,7 +27,6 @@ var register = document.getElementById('submit_btn');
       //var email = document.getElementById('email').value;
       var subject = document.getElementById('subject').value;
       var message = document.getElementById('message').value;
-      var message = req.body.message;
        if (name==='' || message==='' || subject==='') {
            alert("Field can't be empty!");
            return;
