@@ -47,6 +47,12 @@ function createtemplate2(data){
 	        .lead {
 	            font-family: 'Courgette', cursive;
             }
+            <style>
+		    ul li{
+	            font-family: 'Baloo Bhaina', cursive;
+	            font-size: 17px;
+	        }
+		    </style>
 	      
 		</style>
 	</head>
