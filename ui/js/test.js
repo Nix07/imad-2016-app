@@ -38,7 +38,7 @@ var register = document.getElementById('submit_btn');
         }
       request.open('POST', '/message', true);
       request.setRequestHeader('Content-Type', 'application/json');
-      request.send(JSON.stringify({name: name,subject: subject, message:message}));  
+      request.send(JSON.stringify({name: name,subject: subject, message: message}));  
       register.value = 'Sending...';
   
   };
