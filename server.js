@@ -38,7 +38,7 @@ function createtemplate2(data){
 		<script src="/js/jquery.js"></script>
 		<script src="/js/bootstrap.js"></script>
 		<script src="https://use.fontawesome.com/a772b32689.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Bungee|Courgette|Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Bungee|Courgette|PT+Mono|Pacifico" rel="stylesheet">
 		<style>
 		    ul li{
 	            font-family: 'Baloo Bhaina', cursive;
