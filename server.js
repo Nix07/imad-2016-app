@@ -38,15 +38,16 @@ function createtemplate2(data){
 		<script src="/js/jquery.js"></script>
 		<script src="/js/bootstrap.js"></script>
 		<script src="https://use.fontawesome.com/a772b32689.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Bungee|Pacifico|Satisfy" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Bungee|Courgette|Pacifico" rel="stylesheet">
 		<style>
 		    ul li{
 	            font-family: 'Baloo Bhaina', cursive;
 	            font-size: 17px;
 	        }
 	        .lead {
-	            
-	        }
+	            font-family: 'Courgette', cursive;
+            }
+	      
 		</style>
 	</head>
 
