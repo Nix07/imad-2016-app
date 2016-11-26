@@ -27,6 +27,16 @@ var register = document.getElementById('submit_btn');
       //var email = document.getElementById('email').value;
       var subject = document.getElementById('subject').value;
       var message = document.getElementById('message').value;
+      var message = req.body.message;
+       if (name==='' || message==='' || subject==='') {
+           alert("Field can't be empty!");
+           return;
+        }
+        
+        if (name.length===0 || message.length===0 || subject.length===0){
+            alert("Field can't be empty!");
+            return;
+        }
       request.open('POST', '/message', true);
       request.setRequestHeader('Content-Type', 'application/json');
       request.send(JSON.stringify({name: name,subject: subject, message:message}));  
