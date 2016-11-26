@@ -108,7 +108,7 @@ function loadComments () {
                     <div class="well">
 					<span class="lead">${commentsData[i].username}</span>
 					<span class="pull-right" style="font-family: 'PT Mono', monospace;">${time.toLocaleTimeString()} on ${time.toLocaleDateString()}</span><hr>
-					<p>
+					<p style="font-family: 'PT Mono', monospace;">
 						${escapeHTML(commentsData[i].comment)}
 					</p>
 				</div>
