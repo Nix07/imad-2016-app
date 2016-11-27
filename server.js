@@ -92,7 +92,7 @@ function createtemplate2(data){
         </div>
       </div>
     </nav>
-    <header style="background: url(images/header.jpg)">
+    <header style="background: url(/images/header.jpg)">
       <div class="text-center" id="header-top">
         <h1 style="font-family:'Bungee', cursive;">The Blog</h1>
         <div class="lead" style="font-family: 'Pacifico', cursive;">
