@@ -52,35 +52,53 @@ function createtemplate2(data){
 	            font-family: 'Baloo Bhaina', cursive;
 	            font-size: 17px;
 	        }
-		    </style>
-	      
-		</style>
+        @media all and (max-width: 400px) {
+              #header-top {
+                  padding-top: 100px;
+                }
+                #twitter-id {
+                  padding-left: 65px;
+                }
+                #github-id {
+                  padding-right: 40px;
+                }
+          }
+		  </style>
 	</head>
 
 	<body>
 		<nav class="navbar navbar-custom">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#" style="font-family: 'Baloo Bhaina', cursive;">The Blog</a>
-				</div>
-				
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="/">Home</a></li>
-					<li><a href="/index3.html">The Blog</a></li>
-					<li><a href="/about.html">About Me</a></li>
-					<li><a href="/index4.html">Gallery</a></li>
-					<li><a href="/index5.html">Login/Register</a></li>
-				</ul>
-			</div>
-		</nav>
-		<header style="background: url(/images/header.jpg)">
-			<div class="text-center" style="padding-top:50px;">
-				<h1 style="font-family:'Bungee', cursive;">The Blog</h1>
-			<div class="lead" style="font-family: 'Pacifico', cursive;">
-				'The Blog' for Dummies...
-			</div>
-			</div>
-		</header>
+      <div class="container-fluid">
+        <div class="navbar-header page-scroll">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navi" style="color: white; border-color: white; border-width: 2px; padding: 4px;" aria-expanded= true>
+                      <span class="sr-only">Toggle navigation</span>
+                      <span style="color: white; font-family: 'Baloo Bhaina', cursive;font-size: 17px;">Menu </span>
+                      <i class="fa fa-bars"></i>
+                  </button>
+                  <div class="navbar-header">
+            <a class="navbar-brand" href="#" style="font-family: 'Baloo Bhaina', cursive;">The Blog</a>
+          </div>
+              </div>
+
+              <div class="collapse navbar-collapse" id="navi"> 
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/">Home</a></li>
+            <li><a href="index3.html">The Blog</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="index4.html">Gallery</a></li>
+            <li><a href="index5.html">Login/Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header style="background: url(images/header.jpg)">
+      <div class="text-center" id="header-top">
+        <h1 style="font-family:'Bungee', cursive;">The Blog</h1>
+        <div class="lead" style="font-family: 'Pacifico', cursive;">
+          'The Blog' for Dummies...
+        </div>
+      </div>
+    </header>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
 				<div class="posts" style="padding: 10px;">
@@ -100,38 +118,38 @@ function createtemplate2(data){
                 <script type="text/javascript" src="/ui/article.js"></script>
             </div>
 		</div>
-	<footer>
+	     <footer class="mobile">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-						<hr>
-						<ul class="list-inline text-center">
-	                        <li style="font-size:4;">Made with ♥ by <b>Nikhil Prakash</b></li>
-	                        <li>
-	                            <a href="https://twitter.com/imnix07">
-	                                <span class="fa-stack fa-lg">
-	                                    <i class="fa fa-circle fa-stack-2x"></i>
-	                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-	                                </span>
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="https://www.facebook.com/nix.prakash">
-	                                <span class="fa-stack fa-lg">
-	                                    <i class="fa fa-circle fa-stack-2x"></i>
-	                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-	                                </span>
-	                            </a>
-	                        </li>
-	                        <li>
-	                            <a href="https://github.com/nix07">
-	                                <span class="fa-stack fa-lg">
-	                                    <i class="fa fa-circle fa-stack-2x"></i>
-	                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-	                                </span>
-	                            </a>
-	                        </li>
-	                    </ul>
+            <hr>
+            <ul class="list-inline text-center">
+                          <li style="font-size:4;">Made with ♥ by <b>Nikhil Prakash</b></li>
+                          <li id="twitter-id">
+                              <a href="https://twitter.com/imnix07">
+                                  <span class="fa-stack fa-lg">
+                                      <i class="fa fa-circle fa-stack-2x"></i>
+                                      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                  </span>
+                              </a>
+                          </li>
+                          <li>
+                              <a href="https://www.facebook.com/nix.prakash">
+                                  <span class="fa-stack fa-lg">
+                                      <i class="fa fa-circle fa-stack-2x"></i>
+                                      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                  </span>
+                              </a>
+                          </li>
+                          <li id="github-id">
+                              <a href="https://github.com/nix07">
+                                  <span class="fa-stack fa-lg">
+                                      <i class="fa fa-circle fa-stack-2x"></i>
+                                      <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                  </span>
+                              </a>
+                          </li>
+                      </ul>
                     </div>
                 </div>
             </div>
