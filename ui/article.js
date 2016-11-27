@@ -49,6 +49,17 @@ function loadCommentForm () {
                 // Take some action
                 if (request.status === 200) {
                     // clear the form & reload all the comments
+                    // Make the request
+                    var comments = document.getElementById('comment_text').value;
+                    if (comments==='') {
+                       alert("Comment can't be empty!");
+                       return;
+                    }
+                
+                    if (comments.length===0){
+                        alert("Comment can't be empty!");
+                        return;
+                    }
                     document.getElementById('comment_text').value = '';
                     loadComments();    
                 } else {
