@@ -9,6 +9,7 @@
 		<script src="js/bootstrap.js"></script>
 		<script src="https://use.fontawesome.com/a772b32689.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Bungee|Pacifico" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <style>
 	        .posts h1{
 	            font-family: 'Baloo Bhaina', cursive;
@@ -23,16 +24,25 @@
 	<body>
 		<nav class="navbar navbar-custom">
 			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#" style="font-family: 'Baloo Bhaina', cursive;">The Blog</a>
+				<div class="navbar-header page-scroll">
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navi" style="color: white;">
+	                    <span class="sr-only">Toggle navigation</span>
+	                    <span style="color: white;">Menu </span><i class="fa fa-bars"></i>
+	                </button>
+	                <div class="navbar-header">
+						<a class="navbar-brand" href="#" style="font-family: 'Baloo Bhaina', cursive;">The Blog</a>
+					</div>
+	            </div>
+
+	            <div class="collapse navbar-collapse" id="navi"> 
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/">Home</a></li>
+						<li><a href="index3.html">The Blog</a></li>
+						<li><a href="about.html">About Me</a></li>
+						<li><a href="index4.html">Gallery</a></li>
+						<li><a href="index5.html">Login/Register</a></li>
+					</ul>
 				</div>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="/">Home</a></li>
-					<li><a href="index3.html">The Blog</a></li>
-					<li><a href="about.html">About Me</a></li>
-					<li><a href="index4.html">Gallery</a></li>
-					<li><a href="index5.html">Login/Register</a></li>
-				</ul>
 			</div>
 		</nav>
 		<header style="background: url(images/header.jpg)">
