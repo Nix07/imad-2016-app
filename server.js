@@ -202,17 +202,6 @@ app.post('/create-user', function (req, res) {
 app.post('/login', function (req, res) {
    var username = req.body.username;
    var password = req.body.password;
-    if (username==='' || password==='') {
-        alert("Field can't be empty!");
-        console.log('yes');
-        return;
-    }
-    
-    if (username.length===0 || password.length===0){
-        alert("Field can't be empty!");
-        console.log('yes3');
-        return;
-    }
    pool.query('SELECT * FROM "user" WHERE username = $1', [username], function (err, result) {
       if (err) {
           res.status(500).send(err.toString());
