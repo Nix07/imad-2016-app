@@ -162,7 +162,7 @@ function createtemplate2(data){
 }
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index2.html'));
+  res.sendFile('/ui/index2.html');
 });
 
 
